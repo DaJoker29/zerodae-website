@@ -29,3 +29,6 @@ node_modules
 
 # Public (Output) Folder
 public
+
+# Sass Cache
+.sass-cache

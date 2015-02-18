@@ -54,6 +54,9 @@ module.exports = function(grunt) {
             all: ['public/']
         },
         jshint: {
+            options: {
+                jshintrc: true
+            },
             all: ['src/js/**/*.js']
         },
         uglify: {

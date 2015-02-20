@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         copy: {
             php: {
                 cwd: 'src/php',
-                src: ['**/*.php', '!**/_*.php'],
+                src: ['**/*.php'],
                 dest: 'public',
                 expand: true
             }

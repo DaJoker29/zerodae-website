@@ -1,9 +1,15 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Zero Daedalus</title>
+<?php 
+    set_include_path('./inc');
+    include 'head.php';
+?>
 </head>
 <body>
-    
+<?php 
+    include 'header.php';
+    include 'footer.php';
+    include 'scripts.php';
+ ?>
 </body>
 </html>

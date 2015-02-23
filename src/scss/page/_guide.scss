@@ -1,0 +1,52 @@
+/* Important: This file should only be included in the Guide Stylesheet */
+.guide section {
+    border: 1px solid;
+    margin: $gutter;
+    padding: $gutter;
+}
+
+.color {
+    display: inline;
+    color: $color-bg;
+    text-align: center;
+    font-weight: bold;
+    & > div {
+        display: inline-block;
+        width: 5 * $gutter;
+        height: 5 * $gutter;
+        border: 1px solid;
+    }
+}
+
+#bg > div {
+    background-color: $color-bg;
+    color: $color-text;
+}
+
+#text > div {
+    background-color: $color-text;
+}
+
+#primary > div {
+    background-color: $color-primary;
+}
+
+#secondary > div {
+    background-color: $color-secondary;
+}
+
+#accent > div {
+    background-color: $color-accent;
+}
+
+.display {
+    font-family: $font-display;
+}
+
+.serif {
+    font-family: $font-serif;
+}
+
+.sans {
+    font-family: $font-sans;
+}

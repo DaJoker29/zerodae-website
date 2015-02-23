@@ -1,0 +1,7 @@
+.danger {
+    @include btn($color-failure);
+}
+
+.success {
+    @include btn($color-success);
+}

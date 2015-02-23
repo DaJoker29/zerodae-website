@@ -1,9 +1,37 @@
 // Color
-$cream:                 #dddbac;
-$gray:                  #dddddd;
+$color-bg:              #222;
+$color-text:            #ddd;
 
-$green-light:           #5edd65;
-$green-dark:            #00dd0b;
+$color-primary:         #97D38D;
+$color-secondary:       #D4C96A;
+$color-accent:          #545993;
 
-$gold-light:            #ddbc5a;
-$gold-dark:             #ddaa11;
+$color-success:         green;
+$color-failure:         red;
+$color-disabled:        gray;
+
+$black:                 #000;
+
+// Typography
+
+$font-size:             16px;
+$line-height:           1.5;
+
+// Modular Scale ratio of 1.5
+$h1:                    3.375rem; //Site Header
+$h2:                    2.25rem; // Page Titles
+$h3:                    1.5rem; // Content Subheadings
+$small:                 0.667rem;
+
+// Fonts
+$font-display:          'Comfortaa', cursive;
+$font-serif:            'Roboto Slab', serif;
+$font-sans:             'Roboto Condensed', sans-serif;
+
+// Grid
+$width:                 960px;
+$gutter:                1.5rem;
+$gutter-small:          $gutter / 3;
+
+// Transitions
+$transition:            0.3s;

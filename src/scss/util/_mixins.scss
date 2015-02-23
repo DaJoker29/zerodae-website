@@ -1,0 +1,13 @@
+// Text Shadow 
+@mixin text-shadow($h: 1px, $v: 1px, $blur: 1px, $color: $color-accent) {
+  text-shadow: $h $v $blur $color;
+}
+
+// Buttons
+@mixin btn($c: inherit) {
+    color: $c;
+    opacity: 0.7;
+    &:hover {
+        color: $c
+    }
+}

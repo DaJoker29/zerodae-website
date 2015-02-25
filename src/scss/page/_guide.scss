@@ -1,8 +1,13 @@
 /* Important: This file should only be included in the Guide Stylesheet */
 .guide section {
-    border: 1px solid;
-    margin: $gutter;
     padding: $gutter;
+}
+
+.guide > section > section {
+    background-color: rgba(0,0,0,.3);
+    border: 2px solid $black;
+    border-radius: $gutter;
+    margin: $gutter;
 }
 
 .color {
@@ -49,4 +54,40 @@
 
 .sans {
     font-family: $font-sans;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    display: block;
+}
+
+.mobile {
+    width: $width-mobile;
+}
+
+.btt {
+    font-size: $base-size;
+}
+
+ul ul{
+    padding-left: $gutter;    
+}
+
+#nav {
+    width: $gutter * 8;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    background-color: $black;
+    opacity: 0;
+    transition: $transition;
+    
+    li {
+        margin: $gutter / 2;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
 }

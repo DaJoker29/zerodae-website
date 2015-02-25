@@ -9,7 +9,7 @@ body {
     background-color: $color-bg;
     color: $color-text;
     font-family: $font-sans;
-    font-size: $font-size;
+    font-size: $base-size;
     line-height: $line-height;
     margin: 0;
 }
@@ -29,6 +29,7 @@ ul {
 
 li {
     display: block;
+    list-style-type: none;
 }
 
 h1,

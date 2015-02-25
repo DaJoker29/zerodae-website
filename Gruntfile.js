@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['src/js/**/*.js'],
-                tasks: ['jshint', 'uglify:dev']
+                tasks: [ 'jshint', 'uglify:dev']
             },
             php: {
                 files: ['src/php/**/*.php'],

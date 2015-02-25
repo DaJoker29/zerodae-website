@@ -5,10 +5,11 @@
     include 'head.php';
 ?>
 <!-- Content -->
+<nav id="nav"><ul></ul></nav>
 <main class="content guide">
     <!-- Atoms -->
-    <section id="atoms">
-        <h1>Elements</h1>
+    <section>
+        <h1>Atoms</h1>
 
         <h2>Colors</h2>
         <section>
@@ -39,6 +40,15 @@
             <h2>Level 2 <a href="#">Link</a></h2>
             <h3>Level 3 <a href="#">Link</a></h3>
             <h4>Level 4 <a href="#">Link</a></h4>
+        </section>
+
+        <h2>Site Title</h2>
+        <section>
+            <h3>Full Width</h3>
+            <h1 class="site-title"><a>Zero Daedalus</a></h1>
+
+            <h3>Truncated</h3>
+            <h1 class="site-title"><a>zDae</a></h1>
         </section>
 
         <h2>Text</h2>
@@ -96,11 +106,11 @@
 
             <p>
                 <label for="">Valid</label>
-                <input type="text" class="valid">
+                <input type="text" class="valid" placeholder="Success">
             </p>
             <p>
                 <label for="">Invalid</label>
-                <input type="text" class="invalid">
+                <input type="text" class="invalid" placeholder="Failure">
             </p>
 
             <h3>Select</h3>
@@ -124,6 +134,9 @@
             <p><a href="" class="btn danger">Danger</a></p>
             <p><a href="" class="btn success">Success</a></p>
 
+            <h3>Icons</h3>
+            <p><a href="" class="btn">&#9776;</a></p>
+
         </section>
 
     </section>
@@ -131,11 +144,39 @@
     <!-- Molecules -->
     <section id="molecules">
         <h1>Molecules</h1>
+
+        <h2>Navigation</h2>
+        <section>
+            <h3>Primary</h3>
+                <nav class="nav" role="navigation">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+        </section>
+        <section class="collapse">
+            <h3>Collapsed</h3>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
     </section>
 
     <!-- Organisms -->
     <section id="organisms">
-        <h1>Organizms</h1>
+        <h1>Organisms</h1>
     </section>
 
 </main>

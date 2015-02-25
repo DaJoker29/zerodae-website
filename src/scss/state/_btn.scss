@@ -5,3 +5,7 @@
 .success {
     @include btn($color-success);
 }
+
+.toggled {
+    background-color: transparent;
+}

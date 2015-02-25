@@ -14,7 +14,7 @@ $black:                 #000;
 
 // Typography
 
-$font-size:             16px;
+$base-size:             16px;
 $line-height:           1.5;
 
 // Modular Scale ratio of 1.5
@@ -29,7 +29,8 @@ $font-serif:            'Roboto Slab', serif;
 $font-sans:             'Roboto Condensed', sans-serif;
 
 // Grid
-$width:                 960px;
+$width-desktop:         1200px;
+$width-mobile:          480px;
 $gutter:                1.5rem;
 $gutter-small:          $gutter / 3;
 

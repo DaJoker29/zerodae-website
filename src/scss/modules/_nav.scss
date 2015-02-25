@@ -1,0 +1,22 @@
+.nav {
+    float: right;
+    font-family: $font-serif;
+}
+
+.nav li {
+    float: left;
+    width: 8em;
+}
+
+.nav a {
+    padding: $gutter-small;
+}
+
+.collapse li {
+    float: none;
+    width: 100%;
+}
+
+.collapse .nav {
+    float: none;
+}

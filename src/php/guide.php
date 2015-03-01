@@ -139,15 +139,22 @@
 
         </section>
 
-    </section>
+        <h2>Navigation Bar</h2>
+        <section>
+            <h3>Top Bar</h3>
+            <p>
+                <div class="navbar navbar__top"></div>
+            </p>
 
-    <!-- Molecules -->
-    <section id="molecules">
-        <h1>Molecules</h1>
+            <h3>Bottom Bar</h3>
+            <p>
+                <div class="navbar navbar__bottom"></div>
+            </p>
+        </section>
 
         <h2>Navigation</h2>
-        <section>
-            <h3>Primary</h3>
+        <section style="height: 24px;">
+            <h3 style="float:left">Primary</h3>
                 <nav class="nav" role="navigation">
                     <ul>
                         <li><a href="">About</a></li>
@@ -170,6 +177,12 @@
                 </ul>
             </nav>
         </section>
+
+    </section>
+
+    <!-- Molecules -->
+    <section id="molecules">
+        <h1>Molecules</h1>
 
 
     </section>

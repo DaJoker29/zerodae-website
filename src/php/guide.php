@@ -18,6 +18,7 @@
                 <li id="text" class="color"><div><span>Text</span></div></li>
                 <li id="primary" class="color"><div><span>Primary</span></div></li>
                 <li id="secondary" class="color"><div><span>Secondary</span></div></li>
+                <li id="secondary-dark" class="color"><div><span>Secondary (Dark)</span></div></li>
                 <li id="accent" class="color"><div><span>Accent</span></div></li>
             </ul>
         </section>
@@ -42,13 +43,18 @@
             <h4>Level 4 <a href="#">Link</a></h4>
         </section>
 
-        <h2>Site Title</h2>
+        <h2>Title</h2>
         <section>
             <h3>Full Width</h3>
-            <h1 class="site-title"><a>Zero Daedalus</a></h1>
+            <h1 class="title"><a>Zero Daedalus</a></h1>
 
             <h3>Truncated</h3>
-            <h1 class="site-title"><a>zDae</a></h1>
+            <h1 class="title"><a>zDae</a></h1>
+        </section>
+
+        <h2>Tagline</h2>
+        <section>
+            <span class="tagline">Connect. Develop. Evolve.</span>
         </section>
 
         <h2>Text</h2>
@@ -143,18 +149,24 @@
         <section>
             <h3>Top Bar</h3>
             <p>
-                <div class="navbar navbar__top"></div>
+                <div class="navbar__top"></div>
             </p>
 
             <h3>Bottom Bar</h3>
             <p>
-                <div class="navbar navbar__bottom"></div>
+                <div class="navbar__bottom"></div>
             </p>
         </section>
 
+
+    </section>
+
+    <!-- Molecules -->
+    <section id="molecules">
+        <h1>Molecules</h1>
+
         <h2>Navigation</h2>
         <section style="height: 24px;">
-            <h3 style="float:left">Primary</h3>
                 <nav class="nav" role="navigation">
                     <ul>
                         <li><a href="">About</a></li>
@@ -164,33 +176,50 @@
                     </ul>
                 </nav>
         </section>
-        <section class="collapse">
-            <h3>Collapsed</h3>
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                    </li>
-                </ul>
-            </nav>
+
+        <h2>Copyright</h2>
+        <section>
+            <small>
+                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
+            </small>
         </section>
-
-    </section>
-
-    <!-- Molecules -->
-    <section id="molecules">
-        <h1>Molecules</h1>
-
+  
 
     </section>
 
     <!-- Organisms -->
     <section id="organisms">
         <h1>Organisms</h1>
+        <h2>Header</h2>
+        <header class="navbar__top">
+            <h1 class="title"><a href="">Zero Daedalus</a></h1>
+            <!-- <span class="tagline">Connect. Develop. Evolve.</span> -->
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Footer</h2>
+        <footer class="navbar__bottom">
+            <small class="copyright">
+                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
+            </small>
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </footer>
     </section>
+
 
 </main>
 <!-- End of Content -->

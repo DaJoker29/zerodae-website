@@ -76,7 +76,7 @@ function clean(text) {
                 return '-';
             }
             if (c >= 65 && c <= 90) {
-                return '_' + s.toLowerCase();
+                return s.toLowerCase();
             }
             return '__' + ('000' + c.toString(16)).slice(-4);
         });

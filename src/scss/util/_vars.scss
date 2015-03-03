@@ -4,6 +4,7 @@ $color-text:            #ddd;
 
 $color-primary:         #97D38D;
 $color-secondary:       #D4C96A;
+$color-secondary-dark:  darken($color-secondary, 55%);
 $color-accent:          #545993;
 
 $color-success:         green;
@@ -14,7 +15,7 @@ $black:                 #000;
 
 // Typography
 
-$base-size:             16px;
+$base-size:             16px; // Regular Text Size
 $line-height:           1.5;
 
 // Modular Scale ratio of 1.5

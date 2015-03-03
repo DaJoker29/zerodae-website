@@ -40,6 +40,11 @@
     background-color: $color-secondary;
 }
 
+#secondary-dark > div {
+    background-color: $color-secondary-dark;
+    color: $color-text;
+}
+
 #accent > div {
     background-color: $color-accent;
 }

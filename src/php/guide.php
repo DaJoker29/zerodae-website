@@ -12,19 +12,19 @@
         <h1>Atoms</h1>
 
         <h2>Colors</h2>
-        <section>
+        <section class="section">
             <ul>
-                <li id="bg" class="color"><div><span>Background</span></div></li>
-                <li id="text" class="color"><div><span>Text</span></div></li>
-                <li id="primary" class="color"><div><span>Primary</span></div></li>
-                <li id="secondary" class="color"><div><span>Secondary</span></div></li>
-                <li id="secondary-dark" class="color"><div><span>Secondary (Dark)</span></div></li>
-                <li id="accent" class="color"><div><span>Accent</span></div></li>
+                <li id="swatch-bg" class="color"><div><span>Background</span></div></li>
+                <li id="swatch-text" class="color"><div><span>Text</span></div></li>
+                <li id="swatch-primary" class="color"><div><span>Primary</span></div></li>
+                <li id="swatch-secondary" class="color"><div><span>Secondary</span></div></li>
+                <li id="swatch-secondary-dark" class="color"><div><span>Secondary (Dark)</span></div></li>
+                <li id="swatch-accent" class="color"><div><span>Accent</span></div></li>
             </ul>
         </section>
 
         <h2>Fonts</h2>
-        <section>
+        <section class="section">
             <h3>Display Font</h3>
                 <p class="display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, cupiditate quas quisquam neque accusantium rerum magni illo accusamus, placeat deserunt similique tempore optio sunt a rem error porro mollitia eveniet?</p>
 
@@ -35,16 +35,90 @@
                 <p class="sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores alias quo ipsum perferendis optio, laudantium nesciunt, itaque, unde soluta accusamus. Libero aspernatur, saepe molestiae, quia ratione exercitationem consectetur rem.</p>
         </section>
 
+        <h2>Form and Input Elements</h3>
+        <section class="section">
+            <h3>Inputs</h3>
+            <p>
+                <label for="">Label</label>
+            </p>
+
+            <p>
+                <input type="text" placeholder="Text Input">
+            </p>
+
+            <p>
+                <input type="text" class="valid" placeholder="Successful Input">
+            </p>
+            <p>
+                <input type="text" class="invalid" placeholder="Failure Input">
+            </p>
+
+            <h3>Select</h3>
+            <p>
+                <label for="">Select Menu</label>
+                <select name="" id="">
+                    <option value="">Something 1</option>
+                    <option value="">Something 2</option>
+                    <option value="">Something 3</option>
+                </select>
+            </p>
+
+            <h3>Text Area</h3>
+            <p>
+                <label for="">Message</label>
+                <textarea rows="10"></textarea>
+            </p>
+            
+            <h3>Buttons</h3>
+            <p><a href="" class="btn">Button</a></p>
+            <p><a href="" class="btn danger">Danger</a></p>
+            <p><a href="" class="btn success">Success</a></p>
+
+            <h3>Icons</h3>
+            <p><a href="" class="btn">&#9776;</a></p>
+        </section>
+
         <h2>Headings</h2>
-        <section>
+        <section class="section">
             <h1>Level 1 <a href="#">Link</a></h1>
             <h2>Level 2 <a href="#">Link</a></h2>
             <h3>Level 3 <a href="#">Link</a></h3>
             <h4>Level 4 <a href="#">Link</a></h4>
         </section>
 
-        <h2>Title</h2>
+        <h2>Hero Image</h2>
+        <section class="section">
+            <section class="hero"></section>
+        </section>
+
+        <h2>Navigation Bar</h2>
+        <section class="section">
+            <h3>Top Bar</h3>
+            <p>
+                <div class="navbar__top"></div>
+            </p>
+
+            <h3>Bottom Bar</h3>
+            <p>
+                <div class="navbar__bottom"></div>
+            </p>
+        </section>
+
+        <h2>Sections</h2>
         <section>
+            <h3>Section</h3>
+            <section class="section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odit ullam voluptatibus sit voluptatem dolor, illo harum sequi quos facilis, dolores laboriosam pariatur unde molestias vero a nobis! Dolor, facilis.</p>
+            </section>
+
+            <h3>Panel</h3>
+            <section class="section">
+                <span class="panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa optio, quidem, eveniet quaerat, vel sed, recusandae consequatur aut laboriosam quia nam tempore. Recusandae perferendis, dicta. A velit quia libero asperiores.</span>
+            </section>
+        </section>
+
+        <h2>Title</h2>
+        <section class="section">
             <h3>Full Width</h3>
             <h1 class="title"><a>Zero Daedalus</a></h1>
 
@@ -53,12 +127,12 @@
         </section>
 
         <h2>Tagline</h2>
-        <section>
+        <section class="section">
             <span class="tagline">Connect. Develop. Evolve.</span>
         </section>
 
         <h2>Text</h2>
-        <section>
+        <section class="section">
             <h3>Paragraphs</h3>
             <p>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati velit vel quae quas asperiores praesentium eius laboriosam libero tenetur est molestias odio maxime, doloremque eaque sint, expedita dolorum tempora earum.</span>
@@ -91,12 +165,101 @@
                 <small>Lorem ipsum dolor sit amet, <a>consectetur adipisicing elit</a>. Asperiores atque assumenda numquam quisquam similique consequatur rem voluptatibus. Explicabo veritatis enim distinctio repellendus tempora quas, vitae placeat recusandae quia animi. Perspiciatis.</small>
             </p>
 
+            <h3>Abbreviation</h3>
+            <p>
+                <abbr title="Schaffer The Darklord">STD</abbr> 
+            </p>
+
             <h3></h3>
         </section>
+    </section>
 
-        <h2>Form and Input Elements</h3>
-        <section>
-            <h3>Inputs</h3>
+    <!-- Molecules -->
+    <section id="molecules">
+        <h1>Molecules</h1>
+
+        <h2>Navigation</h2>
+        <section style="height: 24px;" class="section">
+                <nav class="nav" role="navigation">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+        </section>
+
+        <h2>Copyright</h2>
+        <section class="section">
+            <small>
+                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
+            </small>
+        </section>
+
+        <h2>Callout</h2>
+        <section class="section">
+            <span class="panel"><strong>Zero Daedalus</strong> (<em>zDae</em> for short) is a web agency based in the California Central Valley</span>
+        </section>
+
+        <h2>Form Fields</h2>
+        <section class="section">
+            <p>
+                <label for="input">Input</label>
+                <input type="text" placeholder="Form Field">
+            </p>
+            <p>
+                <a href="" class="btn">Submit</a>
+            </p>
+        </section>
+    </section>
+
+    <!-- Organisms -->
+    <section id="organisms">
+        <h1>Organisms</h1>
+
+        <h2>Header</h2>
+        <section class="section">
+            <header class="navbar__top">
+            <h1 class="title"><a href="">Zero Daedalus</a></h1>
+            <!-- <span class="tagline">Connect. Develop. Evolve.</span> -->
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+            </header>
+        </section>
+
+        <h2>Footer</h2>
+        <section class="section">
+            <footer class="navbar__bottom">
+            <small class="copyright">
+                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
+            </small>
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+            </footer>
+        </section>
+
+        <h2>Hero</h2>
+        <section class="section">
+            <section class="hero">
+                    <span class="panel"><strong>Zero Daedalus</strong> (<em>zDae</em> for short) is a web agency based in the California Central Valley</span>
+            </section>
+        </section>
+
+        <h2>Contact Form</h2>
+        <form action="" class="section">
             <p>
                 <label>Name <abbr title="Required">*</abbr></label>
                 <input type="text" placeholder="Enter your name here">
@@ -111,113 +274,10 @@
             </p>
 
             <p>
-                <label for="">Valid</label>
-                <input type="text" class="valid" placeholder="Success">
+                <a href="" class="btn danger">Reset</a>
+                <a href="" class="btn success">Submit</a>
             </p>
-            <p>
-                <label for="">Invalid</label>
-                <input type="text" class="invalid" placeholder="Failure">
-            </p>
-
-            <h3>Select</h3>
-            <p>
-                <label for="">Select Menu</label>
-                <select name="" id="">
-                    <option value="">Something 1</option>
-                    <option value="">Something 2</option>
-                    <option value="">Something 3</option>
-                </select>
-            </p>
-
-            <h3>Text Area</h3>
-            <p>
-                <label for="">Message</label>
-                <textarea rows="10"></textarea>
-            </p>
-            
-            <h3>Buttons</h3>
-            <p><a href="" class="btn">Button</a></p>
-            <p><a href="" class="btn danger">Danger</a></p>
-            <p><a href="" class="btn success">Success</a></p>
-
-            <h3>Icons</h3>
-            <p><a href="" class="btn">&#9776;</a></p>
-
-        </section>
-
-        <h2>Navigation Bar</h2>
-        <section>
-            <h3>Top Bar</h3>
-            <p>
-                <div class="navbar__top"></div>
-            </p>
-
-            <h3>Bottom Bar</h3>
-            <p>
-                <div class="navbar__bottom"></div>
-            </p>
-        </section>
-
-
-    </section>
-
-    <!-- Molecules -->
-    <section id="molecules">
-        <h1>Molecules</h1>
-
-        <h2>Navigation</h2>
-        <section style="height: 24px;">
-                <nav class="nav" role="navigation">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </nav>
-        </section>
-
-        <h2>Copyright</h2>
-        <section>
-            <small>
-                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
-            </small>
-        </section>
-  
-
-    </section>
-
-    <!-- Organisms -->
-    <section id="organisms">
-        <h1>Organisms</h1>
-        <h2>Header</h2>
-        <header class="navbar__top">
-            <h1 class="title"><a href="">Zero Daedalus</a></h1>
-            <!-- <span class="tagline">Connect. Develop. Evolve.</span> -->
-            <nav class="nav" role="navigation">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <h2>Footer</h2>
-        <footer class="navbar__bottom">
-            <small class="copyright">
-                Copyright &copy; 2015 &bull; Crafted by <a href="">Zero Daedalus</a>
-            </small>
-            <nav class="nav" role="navigation">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </nav>
-        </footer>
+        </form>
     </section>
 
 

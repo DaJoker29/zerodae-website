@@ -14,7 +14,6 @@ $color-disabled:        gray;
 $black:                 #000;
 
 // Typography
-
 $base-size:             16px; // Regular Text Size
 $line-height:           1.5;
 
@@ -35,6 +34,7 @@ $width-mobile:          480px;
 $gutter:                1.5rem;
 $gutter-small:          $gutter / 3;
 $height-navbar:         $gutter * 3;
+$height-hero:           $gutter * 20;
 
 // Transitions
 $transition:            0.3s;

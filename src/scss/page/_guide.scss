@@ -1,15 +1,4 @@
 /* Important: This file should only be included in the Guide Stylesheet */
-.guide section {
-    padding: $gutter;
-}
-
-.guide > section > section {
-    background-color: rgba(0,0,0,.3);
-    border: 2px solid $black;
-    border-radius: $gutter;
-    margin: $gutter;
-}
-
 .color {
     display: inline;
     color: $color-bg;
@@ -23,29 +12,29 @@
     }
 }
 
-#bg > div {
+#swatch-bg > div {
     background-color: $color-bg;
     color: $color-text;
 }
 
-#text > div {
+#swatch-text > div {
     background-color: $color-text;
 }
 
-#primary > div {
+#swatch-primary > div {
     background-color: $color-primary;
 }
 
-#secondary > div {
+#swatch-secondary > div {
     background-color: $color-secondary;
 }
 
-#secondary-dark > div {
+#swatch-secondary-dark > div {
     background-color: $color-secondary-dark;
     color: $color-text;
 }
 
-#accent > div {
+#swatch-accent > div {
     background-color: $color-accent;
 }
 

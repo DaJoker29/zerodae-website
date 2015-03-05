@@ -25,6 +25,7 @@ ol,
 ul {
     margin: 0;
     padding: 0;
+    clear: both;
 }
 
 li {
@@ -79,4 +80,9 @@ select {
     outline: 0;
     resize: none;
     width: 90%;
+}
+
+abbr {
+    color: $color-primary;
+    cursor: help;
 }

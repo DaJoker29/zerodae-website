@@ -1,5 +1,5 @@
 // Text Shadow 
-@mixin text-shadow($h: 1px, $v: 1px, $blur: 1px, $color: $color-accent) {
+@mixin text-shadow($h: 1px, $v: 0, $blur: 1px, $color: $color-bg) {
   text-shadow: $h $v $blur $color;
 }
 
@@ -16,4 +16,12 @@
     @media only screen and (min-width: #{$w}) {
         @content;
     }
+}
+
+@mixin section ($c: $black, $t: .7, $g: $gutter) {
+    background-color: transparentize($c, $t);
+    border: 2px solid $c;
+    border-radius: $g;
+    margin: $g;
+    padding: $g;
 }

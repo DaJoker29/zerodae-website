@@ -10,12 +10,14 @@
 @import "layouts/content";
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/hero";
 
 // Modules
 @import "modules/btn";
 @import "modules/nav";
 @import "modules/navbar";
 @import "modules/title";
+@import "modules/sections";
 
 // State
 @import "state/fields";

@@ -1,4 +1,11 @@
 /* Important: This file should only be included in the Guide Stylesheet */
+
+
+// Imports
+@import "util/vars";
+
+
+// Rules
 .color {
     display: inline;
     color: $color-bg;

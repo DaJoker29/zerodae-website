@@ -69,12 +69,14 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'public/script.js': ['src/js/**/*.js']
+                    'public/script.js': ['src/js/**/*.js', '!src/js/guide/*.js'],
+                    'public/guide.js': ['src/js/guide/*.js']
                 }
             },
             prod: {
                 files: {
-                    'public/script.js': ['src/js/**/*.js']
+                    'public/script.js': ['src/js/**/*.js', '!src/js/guide/*.js'],
+                    'public/guide.js': ['src/js/guide/*.js']
                 }
             }
         },

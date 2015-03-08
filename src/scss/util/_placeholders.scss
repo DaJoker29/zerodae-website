@@ -1,0 +1,11 @@
+%bborder {
+    border-bottom: 1px dashed;
+}
+
+%navbar {
+    border: 0 solid $color-secondary-dark;
+    display: flex;
+    height: $height-navbar;
+    text-align: center;
+    width: 100%;
+}

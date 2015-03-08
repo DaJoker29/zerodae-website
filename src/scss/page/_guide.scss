@@ -1,0 +1,87 @@
+/* Important: This file should only be included in the Guide Stylesheet */
+.color {
+    display: inline;
+    color: $color-bg;
+    text-align: center;
+    font-weight: bold;
+    & > div {
+        display: inline-block;
+        width: 5 * $gutter;
+        height: 5 * $gutter;
+        border: 1px solid;
+    }
+}
+
+#swatch-bg > div {
+    background-color: $color-bg;
+    color: $color-text;
+}
+
+#swatch-text > div {
+    background-color: $color-text;
+}
+
+#swatch-primary > div {
+    background-color: $color-primary;
+}
+
+#swatch-secondary > div {
+    background-color: $color-secondary;
+}
+
+#swatch-secondary-dark > div {
+    background-color: $color-secondary-dark;
+    color: $color-text;
+}
+
+#swatch-accent > div {
+    background-color: $color-accent;
+}
+
+.display {
+    font-family: $font-display;
+}
+
+.serif {
+    font-family: $font-serif;
+}
+
+.sans {
+    font-family: $font-sans;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    display: block;
+}
+
+.mobile {
+    width: $width-mobile;
+}
+
+.btt {
+    font-size: $base-size;
+}
+
+ul ul{
+    padding-left: $gutter;    
+}
+
+#nav {
+    width: $gutter * 8;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    background-color: $black;
+    opacity: 0;
+    transition: $transition;
+    
+    li {
+        margin: $gutter / 2;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}

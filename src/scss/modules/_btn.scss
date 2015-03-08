@@ -1,0 +1,11 @@
+.btn {
+    @include btn;
+    background-color: $black;
+    border: 1px solid;
+    padding: $gutter-small;
+    margin: $gutter-small;
+    
+    &:hover {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,13 @@
+.navbar__top {
+    @extend %navbar;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, transparent 40%, transparentize($color-primary, .95));
+    border-bottom-width: 1px;
+}
+
+.navbar__bottom {
+    @extend %navbar;
+    align-items: baseline;
+    background: linear-gradient(to top, transparent 40%, transparentize($color-primary, .95));
+    border-top-width: 1px;
+}

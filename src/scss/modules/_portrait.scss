@@ -1,5 +1,5 @@
 .portrait {
-    @include border;
+    @include border($gutter-sm);
     &::before {
         @extend %overlays;
         content: attr(data-name);
@@ -19,4 +19,11 @@
     display: inline-block;
     margin: $gutter-sm;
     position: relative;
+    width: 200px;
+}
+
+.portrait_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

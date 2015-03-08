@@ -22,6 +22,7 @@ $line-height:           1.5;
 $h1:                    2rem; //Site Header
 $h2:                    1.75rem; // Page Titles
 $h3:                    1.5rem; // Content Subheadings
+$body:                  1.125rem;
 $small:                 0.75rem;
 
 // Fonts
@@ -31,9 +32,11 @@ $font-sans:             'Pontano Sans', sans-serif;
 
 // Grid
 $gutter:                1.5rem;
+$gutter-huge:           $gutter * 5;
+$gutter-lg:             $gutter * 3;
+$gutter-md:             $gutter / 2;
 $gutter-sm:             $gutter / 3;
 $gutter-tiny:           $gutter-sm / 2;
-$height-navbar:         $gutter * 3;
 $height-hero:           $gutter * 20;
 
 // Breakpoints

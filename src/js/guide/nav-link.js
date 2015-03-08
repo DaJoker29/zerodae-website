@@ -32,6 +32,8 @@
 
 // }
 
+/* Version 2.0*/
+
 function mapDom() {
     'use strict';
     var sects = document.querySelectorAll('main > section');

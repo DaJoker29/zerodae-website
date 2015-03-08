@@ -14,12 +14,13 @@
         <h2>Colors</h2>
         <section class="section">
             <ul>
-                <li id="swatch-bg" class="color"><div><span>Background</span></div></li>
-                <li id="swatch-text" class="color"><div><span>Text</span></div></li>
-                <li id="swatch-primary" class="color"><div><span>Primary</span></div></li>
-                <li id="swatch-secondary" class="color"><div><span>Secondary</span></div></li>
-                <li id="swatch-secondary-dark" class="color"><div><span>Secondary (Dark)</span></div></li>
-                <li id="swatch-accent" class="color"><div><span>Accent</span></div></li>
+                <li id="swatch-bg" class="color" data-name="Background"><div></div></li>
+                <li id="swatch-text" class="color" data-name="Text"><div></div></li>
+                <li id="swatch-primary" class="color" data-name="Primary"><div></div></li>
+                <li id="swatch-primary-dark" class="color" data-name="Dark Pri."><div></div></li>
+                <li id="swatch-secondary" class="color" data-name="Secondary"><div></div></li>
+                <li id="swatch-secondary-dark" class="color" data-name="Dark Sec."><div></div></li>
+                <li id="swatch-accent" class="color" data-name="Accent"><div></div></li>
             </ul>
         </section>
 

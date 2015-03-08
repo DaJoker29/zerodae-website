@@ -1,26 +1,28 @@
 /* Important: This file should only be included in the Guide Stylesheet */
-
-
 // Imports
 @import "util/vars";
 
 // Rules
 .color {
-    display: inline;
-    color: $color-bg;
-    text-align: center;
-    font-weight: bold;
     & > div {
-        display: inline-block;
-        width: 5 * $gutter;
-        height: 5 * $gutter;
-        border: 1px solid;
+        width: $gutter-huge;
+        height: $gutter-huge;
     }
+    &::before {
+        background-color: transparentize($color-bg, .5);
+        content: attr(data-name);
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+    color: $color-text;
+    position: relative;
 }
 
 #swatch-bg > div {
     background-color: $color-bg;
-    color: $color-text;
 }
 
 #swatch-text > div {
@@ -31,17 +33,26 @@
     background-color: $color-primary;
 }
 
+#swatch-primary-dark > div {
+    background-color: $color-primary-dark;
+}
+
 #swatch-secondary > div {
     background-color: $color-secondary;
 }
 
 #swatch-secondary-dark > div {
     background-color: $color-secondary-dark;
-    color: $color-text;
 }
 
 #swatch-accent > div {
     background-color: $color-accent;
+}
+
+#colors+section>ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .display {
@@ -61,6 +72,16 @@ h2,
 h3,
 h4 {
     display: block;
+    text-align: center;
+}
+
+.guide > section > h1 {
+    text-decoration: underline;
+}
+
+h3,
+h4 {
+    font-family: $font-serif;
 }
 
 .btt {
@@ -78,6 +99,7 @@ ul ul{
     height: 100%;
     background-color: $black;
     opacity: 0;
+    overflow: auto;
     transition: $transition;
     
     li {
@@ -94,5 +116,10 @@ ul ul{
 
 .navbar__top,
 .navbar__bottom {
-    min-height: $height-navbar;
+    min-height: $gutter-lg;
+}
+
+.section {
+    float: none !important;
+    margin: 0 auto;
 }

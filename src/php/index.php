@@ -6,7 +6,7 @@
     include 'header.php';
 ?>
 
-<main>
+<main class="content">
 
     <section class="hero">
         <span class="panel"><strong>Zero Daedalus (zDae for short) is a web agency based in the California Central Valley. </strong></span>

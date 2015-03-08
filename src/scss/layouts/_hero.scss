@@ -1,8 +1,7 @@
 .hero {
-    background-attachment: fixed;
     background-image: url(http://placehold.it/1000x750);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     display: flex;
     min-height: $height-hero;
     width: 100%;

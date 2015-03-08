@@ -2,8 +2,8 @@
     @include btn;
     background-color: $black;
     border: 1px solid;
-    padding: $gutter-small;
-    margin: $gutter-small;
+    padding: $gutter-sm;
+    margin: $gutter-sm;
     
     &:hover {
         background-color: transparent;

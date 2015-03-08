@@ -221,8 +221,9 @@
         <h2>Header</h2>
         <section class="section">
             <header class="navbar__top">
-            <h1 class="title"><a href="">Zero Daedalus</a></h1>
-            <!-- <span class="tagline">Connect. Develop. Evolve.</span> -->
+            <h1 class="title full"><a href="">Zero Daedalus</a></h1>
+            <h1 class="title truncated"><a href="">z-Dae</a></h1>
+            <span class="tagline">Connect. Develop. Evolve.</span>
             <nav class="nav" role="navigation">
                 <ul>
                     <li><a href="">About</a></li>

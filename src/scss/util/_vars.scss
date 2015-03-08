@@ -18,23 +18,28 @@ $base-size:             16px; // Regular Text Size
 $line-height:           1.5;
 
 // Modular Scale ratio of 1.5
-$h1:                    3.375rem; //Site Header
-$h2:                    2.25rem; // Page Titles
+$h1:                    2rem; //Site Header
+$h2:                    1.75rem; // Page Titles
 $h3:                    1.5rem; // Content Subheadings
-$small:                 0.667rem;
+$small:                 0.75rem;
 
 // Fonts
-$font-display:          'Comfortaa', cursive;
-$font-serif:            'Roboto Slab', serif;
-$font-sans:             'Roboto Condensed', sans-serif;
+$font-display:          'Stint Ultra Expanded', cursive;
+$font-serif:            'Alice', serif;
+$font-sans:             'Pontano Sans', sans-serif;
 
 // Grid
-$width-desktop:         1200px;
-$width-mobile:          480px;
 $gutter:                1.5rem;
-$gutter-small:          $gutter / 3;
+$gutter-sm:             $gutter / 3;
+$gutter-tiny:           $gutter-sm / 2;
 $height-navbar:         $gutter * 3;
 $height-hero:           $gutter * 20;
+
+// Breakpoints
+$bp-0:                  480px;
+$bp-1:                  640px;
+$bp-2:                  960px;
+$bp-3:                  1200px;
 
 // Transitions
 $transition:            0.3s;

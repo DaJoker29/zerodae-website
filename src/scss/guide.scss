@@ -4,7 +4,6 @@
 // Imports
 @import "util/vars";
 
-
 // Rules
 .color {
     display: inline;
@@ -64,10 +63,6 @@ h4 {
     display: block;
 }
 
-.mobile {
-    width: $width-mobile;
-}
-
 .btt {
     font-size: $base-size;
 }
@@ -91,4 +86,13 @@ ul ul{
     &:hover {
         opacity: 0.8;
     }
+}
+
+.content {
+    max-width: $bp-3;
+}
+
+.navbar__top,
+.navbar__bottom {
+    min-height: $height-navbar;
 }

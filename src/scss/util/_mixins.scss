@@ -25,3 +25,8 @@
     margin: $g;
     padding: $g;
 }
+
+@mixin navbar ($s) {
+    background: linear-gradient(to #{$s}, transparent 40%, transparentize($color-primary, .8));
+    border-#{$s}-width: 1px;
+}

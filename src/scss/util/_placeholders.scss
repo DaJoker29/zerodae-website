@@ -3,9 +3,15 @@
 }
 
 %navbar {
+    @include media($bp-1) {
+        flex-flow: row wrap;
+        align-items: baseline;
+    }
+    align-items: center;
     border: 0 solid $color-secondary-dark;
     display: flex;
-    height: $height-navbar;
+    flex-flow: column wrap;
+    justify-content: space-around;
     text-align: center;
-    width: 100%;
+    width: 100%; 
 }

@@ -1,9 +1,10 @@
 .nav {
-    flex: 1;
+    flex: 2;
+    font-weight: bold;
 }
 
 .nav > ul {
-    @include media($width-mobile) {
+    @include media($bp-0) {
         flex-direction: row;
     }
     display: flex;
@@ -11,13 +12,16 @@
 }
 
 .nav li {
+    @include media($bp-1) {
+        border-right: 1px solid $color-secondary-dark;
+    }
     flex: 1;
-    border-left: 1px solid $color-secondary-dark;
 }
 
 .nav a {
     display: block;
+    padding: $gutter-sm;
     &:hover {
-        background-color: $color-secondary-dark;
+        background-color: transparentize($color-secondary-dark, .6);
     }
 }

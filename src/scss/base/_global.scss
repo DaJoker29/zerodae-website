@@ -72,7 +72,7 @@ img {
 input,
 textarea,
 select {
-    @include border($c: inherit);
+    @include border($c: $color-text);
     background-color: $black;
     color: $color-text;
     display: block;

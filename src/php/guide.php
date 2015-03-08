@@ -5,7 +5,7 @@
     include 'head.php';
 ?>
 <!-- Content -->
-<nav id="nav"><ul></ul></nav>
+<nav id="nav"></nav>
 <main class="content guide">
     <!-- Atoms -->
     <section>

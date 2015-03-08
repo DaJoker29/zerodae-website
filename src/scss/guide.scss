@@ -93,21 +93,15 @@ ul ul{
 }
 
 #nav {
-    width: $gutter * 8;
-    position: fixed;
-    right: 0;
-    height: 100%;
+    select {
+        width: 100%;
+    }
     background-color: $black;
-    opacity: 0;
-    overflow: auto;
-    transition: $transition;
-    
-    li {
-        margin: $gutter / 2;
-    }
-    &:hover {
-        opacity: 0.8;
-    }
+    left: 0;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .content {

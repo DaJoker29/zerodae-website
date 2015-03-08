@@ -1,38 +1,7 @@
-// /* Build Navigation Links automatically */
-// function buildNav() {
-//     'use strict';
-
-//     // Create nav element
-//     var nav = document.createElement('nav');
-//     var ul = document.createElement('ul');
-
-//     nav.className += ' nav';
-
-//     // Populate Nav Element
-//     var sections = document.querySelectorAll('main > section');
-//     for(var i = 0; i < sections.length; i++) {
-//         var id = sections[i].id;
-//         var text = sections[i].querySelector('h1').textContent;
-
-//         var li = document.createElement('li');
-//         var a = document.createElement('a');
-//         a.href = '#' + id;
-//         a.textContent = text;
-
-//         li.appendChild(a);
-//         ul.appendChild(li);
-//     }
-
-//     nav.appendChild(ul);
-
-//     // Prepend Nav Element
-//     for( var j = 0; j < sections.length; j++) {
-//         sections[j].insertBefore(nav.cloneNode(true), sections[j].childNodes[0]);
-//     }
-
-// }
-
-/* Version 2.0*/
+/* 
+    Automatically Build Navigation System 
+    Version 2.1
+ */
 
 function mapDom() {
     'use strict';
@@ -87,33 +56,35 @@ function clean(text) {
 function buildNav() {
     'use strict';
     var map = mapDom();
-    var nav = document.querySelector('#nav > ul');
+    var nav = document.querySelector('#nav');
+    var select = document.createElement('select');
 
     for(var i = 0; i < map.length; i++) {
-        var li = document.createElement('li');
-        var a = document.createElement('a');
+        // Build optGroup
+        var optGroup = document.createElement('optgroup');
         var children = map[i].children;
-        a.href = '#' + map[i].href;
-        a.textContent = map[i].text;
-        li.appendChild(a);
+        optGroup.label = map[i].text;
 
-        // Build second level
-        var ul = document.createElement('ul');
+        // Build populate optGroup with options
         for(var j = 0; j < children.length; j++) {
-            var x = document.createElement('li');
-            var y = document.createElement('a');
-            y.href = '#' + children[j].href;
-            y.textContent = children[j].text;
-            x.appendChild(y);
-            ul.appendChild(x);
+            var option = document.createElement('option');
+            option.value = '#' + children[j].href;
+            option.textContent = children[j].text;
+            optGroup.appendChild(option);
         }
 
-
-
-        // Add to page
-        li.appendChild(ul);
-        nav.appendChild(li);
+        // Add OptGroup to select menu
+        select.appendChild(optGroup);
     }
+
+    // Add Menu to Page
+    nav.appendChild(select);
+
+    // Add Listener to scroll when selected
+    select.addEventListener('change', function(e) {
+        var element = document.querySelector(e.target.value);
+        element.scrollIntoView();
+    });
 }
 
 /* HTML5 feature test*/

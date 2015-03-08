@@ -1,6 +1,6 @@
 {
   "name": "zDae-website",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "Zero Daedalus website. Designed, built and maintained by Zero Daedalus",
   "main": "index.js",
   "scripts": {

@@ -7,5 +7,10 @@
             <li><a href="<?php echo BASE . '/contact'; ?>">Contact</a></li>
         </ul>
     </nav>
-    <small class="copyright">Copyright &copy; 2015 <a href="<?php echo BASE . '/guide';?>">Zero Daedalus</a></small>
+    <small class="copyright">Copyright &copy; 2015 <a href="<?php 
+    if('localhost' == $_SERVER['HTTP_HOST']) {
+        echo BASE . '/guide';
+    } else {
+        echo '//zerodaedalus.com';
+    }?>">Zero Daedalus</a></small>
 </footer>

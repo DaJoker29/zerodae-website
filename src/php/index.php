@@ -18,17 +18,12 @@
 
     <section class="section">
         <h2>The Team</h2>
-        <img src="//placehold.it/200x200" alt="Picture of Team Member" />
-        <strong>Name</strong>
-        <span>Title</span>
-
-        <img src="//placehold.it/200x200" alt="Picture of Team Member" />
-        <strong>Name</strong>
-        <span>Title</span>
-
-        <img src="//placehold.it/200x200" alt="Picture of Team Member" />
-        <strong>Name</strong>
-        <span>Title</span>
+        <section class="portrait" data-name="Dewitt Buckingham" data-role="Developer">
+            <img src="//placehold.it/200x200" alt="The Team" />
+        </section>
+        <section class="portrait" data-name="John-Alan Hewitt" data-role="Designer">
+            <img src="//placehold.it/200x200" alt="The Team" />
+        </section>
     </section>
 
     <section class="section">

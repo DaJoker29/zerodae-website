@@ -13,15 +13,16 @@
 
 .nav li {
     @include media($bp-1) {
-        border-right: 1px solid $color-secondary-dark;
+        @include border(0);
+        border-right-width: 1px;
     }
     flex: 1;
 }
 
 .nav a {
-    display: block;
-    padding: $gutter-sm;
     &:hover {
         background-color: transparentize($color-secondary-dark, .6);
     }
+    padding: $gutter-sm;
+    display: block;
 }

@@ -70,8 +70,8 @@ img {
 input,
 textarea,
 select {
+    @include border($c: inherit);
     background-color: $black;
-    border: 1px solid;
     color: $color-text;
     display: block;
     font-family: $font-sans;
@@ -80,6 +80,11 @@ select {
     outline: 0;
     resize: none;
     width: 90%;
+}
+
+input {
+    border-width: 0 0 1px 0;
+    background-color: transparent;
 }
 
 abbr {

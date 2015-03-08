@@ -104,6 +104,19 @@
             </p>
         </section>
 
+        <h2>Portraits</h2>
+        <section class="section">
+            <section class="portrait" data-name="John Smith" data-role="Developer">
+                <img src="//placehold.it/200x200" alt="Portait of John Smith">
+            </section>
+            <section class="portrait" data-name="Jane Smith" data-role="Designer">
+                <img src="//placehold.it/200x200" alt="Portait of John Smith">
+            </section>
+            <section class="portrait" data-name="Joe Smith" data-role="Writer">
+                <img src="//placehold.it/200x200" alt="Portait of John Smith">
+            </section>
+        </section>
+
         <h2>Sections</h2>
         <section>
             <h3>Section</h3>
@@ -262,16 +275,13 @@
         <h2>Contact Form</h2>
         <form action="" class="section">
             <p>
-                <label>Name <abbr title="Required">*</abbr></label>
-                <input type="text" placeholder="Enter your name here">
+                <input type="text" placeholder="Name">
             </p>
             <p>
-                <label>Email <abbr title="Required">*</abbr></label>
-                <input type="email" placeholder="Enter your email address here">
+                <input type="email" placeholder="Email Address">
             </p>
             <p>
-                <label for="">Website</label>
-                <input type="url" placeholder="Enter your website address here">
+                <input type="url" placeholder="Website (Optional)">
             </p>
 
             <p>

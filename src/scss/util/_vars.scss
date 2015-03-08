@@ -3,6 +3,7 @@ $color-bg:              #222;
 $color-text:            #ddd;
 
 $color-primary:         #97D38D;
+$color-primary-dark:    darken($color-primary, 55%);
 $color-secondary:       #D4C96A;
 $color-secondary-dark:  darken($color-secondary, 55%);
 $color-accent:          #545993;
@@ -42,4 +43,4 @@ $bp-2:                  960px;
 $bp-3:                  1200px;
 
 // Transitions
-$transition:            0.3s;
+$transition:            0.4s ease-out;

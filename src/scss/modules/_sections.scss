@@ -1,0 +1,15 @@
+.section {
+    @include section;
+}
+
+.panel {
+    @include section($color-primary);
+    @include text-shadow;
+    color: $color-primary;
+    display: block;
+    font-family: $font-display;
+    font-size: $h2;
+    margin: auto;
+    text-align: center;
+    width: 35%;
+}

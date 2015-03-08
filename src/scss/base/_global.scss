@@ -1,4 +1,88 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
-    font-size: 16px;
-    line-height: 1.5;
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: $font-sans;
+    font-size: $base-size;
+    line-height: $line-height;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-display;
+    font-weight: normal;
+}
+
+@each $header, $size in (h1: $h1, h2: $h2, h3: $h3, small: $small) {
+    #{$header} {
+        font-size: $size;
+    }
+}
+
+a {
+    &:hover {
+        color: $color-text;
+    }
+    text-decoration: none;
+    color: $color-secondary;
+    transition: $transition;
+    cursor: pointer;
+}
+
+p {
+    margin: $gutter 0;
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+    background-color: $black;
+    border: 1px solid;
+    color: $color-text;
+    display: block;
+    font-family: $font-sans;
+    font-size: inherit;
+    padding: $gutter-small;
+    outline: 0;
+    resize: none;
+    width: 90%;
+}
+
+abbr {
+    color: $color-primary;
+    cursor: help;
 }

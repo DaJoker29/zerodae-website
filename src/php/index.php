@@ -1,15 +1,13 @@
-<html>
-<head>
 <?php 
-    set_include_path('./inc');
+    require_once('config.php');
+    set_include_path( ROOT . '/inc');
+
     include 'head.php';
-?>
-</head>
-<body>
-<?php 
     include 'header.php';
+?>
+<!-- Content -->
+
+<?php
     include 'footer.php';
     include 'scripts.php';
  ?>
-</body>
-</html>

@@ -1,5 +1,7 @@
 .title {
     flex: 2;
+    font-weight: bold;
+    letter-spacing: $gutter-tiny;
     text-shadow: 0 1px 0 $color-bg,
            0 2px 0 lighten($color-bg, 3.125%),
            0 3px 0 lighten($color-bg, 6.25%),
@@ -15,7 +17,12 @@
 }
 
 .tagline {
-    flex: 1;
+    @include media($bp-1) {
+        display: none;
+    }
+    @include media($bp-3) {
+        display: block;
+    }
+    flex: 2;
     font-style: italic;
-    font-family: $font-serif;
 }

@@ -1,5 +1,23 @@
 .section {
     @include section;
+    @include media($bp-0) {
+        &:nth-child(even) {
+            > h2 {
+                text-align: right;
+            }
+        }
+    }
+    @include media($bp-2) {
+        &:nth-child(even) {
+            float: left;
+        }
+
+        &:nth-child(odd) {
+            float: right;
+        }
+        margin: $gutter-md;
+        width: 80%;
+    }
 }
 
 .panel {

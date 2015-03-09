@@ -3,13 +3,15 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
+    font-size: $base-size;
 }
 
 body {
     background-color: $color-bg;
     color: $color-text;
     font-family: $font-sans;
-    font-size: $base-size;
+    font-size: $body;
+    letter-spacing: 1px;
     line-height: $line-height;
     margin: 0;
 }
@@ -70,19 +72,32 @@ img {
 input,
 textarea,
 select {
+    @include border($c: $color-text);
     background-color: $black;
-    border: 1px solid;
     color: $color-text;
     display: block;
     font-family: $font-sans;
     font-size: inherit;
-    padding: $gutter-small;
+    padding: $gutter-sm;
     outline: 0;
     resize: none;
     width: 90%;
 }
 
+input {
+    border-width: 0 0 1px 0;
+    background-color: transparent;
+}
+
 abbr {
     color: $color-primary;
     cursor: help;
+}
+
+dt {
+    font-family: $font-display;
+}
+
+dd {
+    font-size: $base-size;
 }

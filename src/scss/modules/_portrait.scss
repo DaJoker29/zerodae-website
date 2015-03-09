@@ -1,0 +1,29 @@
+.portrait {
+    @include border($gutter-sm);
+    &::before {
+        @extend %overlays;
+        content: attr(data-name);
+        top: 0;
+    }
+    &::after {
+        @extend %overlays;
+        content: attr(data-role);
+        bottom: 0;
+    }
+    &:hover {
+        &::before,
+        &::after {
+            opacity: .6;
+        }
+    }
+    display: inline-block;
+    margin: $gutter-sm;
+    position: relative;
+    width: 200px;
+}
+
+.portrait_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

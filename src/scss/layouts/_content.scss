@@ -1,4 +1,5 @@
 .content {
     margin: 0 auto;
-    width: $width-desktop;
+    max-width: $bp-2;
+    min-height: 90%;
 }

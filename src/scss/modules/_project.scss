@@ -1,0 +1,18 @@
+.project header {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 $gutter;
+}
+
+.project dl {
+    flex: 2;
+}
+
+.project {
+    @include media($bp-1) {
+        flex-direction: row;
+    }
+    flex-direction: column;
+    display: flex;
+}

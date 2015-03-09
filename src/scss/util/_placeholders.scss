@@ -1,11 +1,24 @@
-%bborder {
-    border-bottom: 1px dashed;
+%navbar {
+    @include border (0);
+    @include media($bp-1) {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%; 
 }
 
-%navbar {
-    border: 0 solid $color-secondary-dark;
-    display: flex;
-    height: $height-navbar;
+%overlays {
+    color: $color-secondary;
+    background-color: $color-secondary-dark;
+    left: 0;
+    position: absolute;
+    opacity: 0;
     text-align: center;
+    transition: $transition;
     width: 100%;
 }

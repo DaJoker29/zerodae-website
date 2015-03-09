@@ -270,6 +270,9 @@
             <p>
                 <input type="url" placeholder="Website (Optional)">
             </p>
+            <p>
+                <textarea rows="10" placeholder="Type your message here..."></textarea>
+            </p>
 
             <p>
                 <a href="" class="btn danger">Reset</a>

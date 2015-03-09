@@ -2,9 +2,12 @@
     @include btn;
     background-color: $black;
     border: 1px solid;
+    font-family: $font-sans;
+    font-size: inherit;
     padding: $gutter-sm;
     margin: $gutter-sm;
     text-align: center;
+    outline: 0;
     
     &:hover {
         background-color: transparent;

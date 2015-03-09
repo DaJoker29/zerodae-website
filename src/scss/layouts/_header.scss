@@ -1,0 +1,12 @@
+.full {
+    @include media($bp-0) {
+        display: block;
+    }
+    display: none;
+}
+
+.truncated {
+    @include media($bp-0) {
+        display: none;
+    }
+}

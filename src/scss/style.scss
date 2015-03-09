@@ -1,7 +1,7 @@
 // Utility
 @import "util/vars";
-@import "util/placeholders";
 @import "util/mixins";
+@import "util/placeholders";
 
 // Base
 @import "base/global";
@@ -18,6 +18,8 @@
 @import "modules/navbar";
 @import "modules/title";
 @import "modules/sections";
+@import "modules/portrait";
+@import "modules/project";
 
 // State
 @import "state/fields";
@@ -26,4 +28,3 @@
 // Theme
 
 // Page
-@import "page/guide";

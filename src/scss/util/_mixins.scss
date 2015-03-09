@@ -1,6 +1,6 @@
 // Text Shadow 
-@mixin text-shadow($h: 1px, $v: 0, $blur: 1px, $color: $color-bg) {
-  text-shadow: $h $v $blur $color;
+@mixin text-shadow($h: 1px, $v: 0, $b: 1px, $c: $color-bg) {
+  text-shadow: $h $v $b $c;
 }
 
 // Buttons
@@ -12,16 +12,28 @@
     }
 }
 
+// Media Queries
 @mixin media($w) {
     @media only screen and (min-width: #{$w}) {
         @content;
     }
 }
 
+// Section
 @mixin section ($c: $black, $t: .7, $g: $gutter) {
+    @include border ($c: $c);
     background-color: transparentize($c, $t);
-    border: 2px solid $c;
     border-radius: $g;
     margin: $g;
     padding: $g;
+}
+
+// Navbars
+@mixin navbar ($s) {
+    background: linear-gradient(to #{$s}, transparent 40%, transparentize($color-primary, .8));
+    border-#{$s}-width: 1px;
+}
+
+@mixin border($w: 1px, $s: solid, $c: $color-secondary-dark) {
+    border: $w $s $c;
 }

@@ -59,10 +59,6 @@
     font-family: $font-display;
 }
 
-.serif {
-    font-family: $font-serif;
-}
-
 .sans {
     font-family: $font-sans;
 }
@@ -77,11 +73,6 @@ h4 {
 
 .guide > section > h1 {
     text-decoration: underline;
-}
-
-h3,
-h4 {
-    font-family: $font-serif;
 }
 
 .btt {

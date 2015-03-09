@@ -2,7 +2,7 @@
     @include border (0);
     @include media($bp-1) {
         flex-flow: row wrap;
-        align-items: baseline;
+        align-items: center;
     }
     align-items: center;
     display: flex;
@@ -15,7 +15,6 @@
 %overlays {
     color: $color-secondary;
     background-color: $color-secondary-dark;
-    font-family: $font-serif;
     left: 0;
     position: absolute;
     opacity: 0;

@@ -20,9 +20,16 @@
 }
 
 .nav a {
-    &:hover {
-        background-color: transparentize($color-secondary-dark, .6);
-    }
-    padding: $gutter-sm;
+    padding: $gutter-md $gutter-sm;
     display: block;
+}
+
+.nav a:hover {
+    background-color: transparentize($color-text, .6);
+}
+
+.index .about-link,
+.work .work-link,
+.contact .contact-link {
+    background-color: transparentize($black, .6);
 }

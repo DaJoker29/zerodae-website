@@ -6,7 +6,7 @@
 ?>
 <!-- Content -->
 <nav id="nav"></nav>
-<main class="content guide">
+<main class="content">
     <!-- Atoms -->
     <section>
         <h1>Atoms</h1>
@@ -28,9 +28,6 @@
         <section class="section">
             <h3>Display Font</h3>
                 <p class="display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, cupiditate quas quisquam neque accusantium rerum magni illo accusamus, placeat deserunt similique tempore optio sunt a rem error porro mollitia eveniet?</p>
-
-                <h3>Serif Font</h3>
-                <p class="serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis architecto vero illo provident eveniet, aut qui vel explicabo eaque, nostrum repellendus itaque dolorem laboriosam reiciendis quisquam recusandae blanditiis molestiae dicta?</p>
 
                 <h3>Sans Font</h3>
                 <p class="sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores alias quo ipsum perferendis optio, laudantium nesciunt, itaque, unde soluta accusamus. Libero aspernatur, saepe molestiae, quia ratione exercitationem consectetur rem.</p>

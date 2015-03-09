@@ -1,4 +1,4 @@
-<html>
+<html class="<?php echo basename($_SERVER['PHP_SELF'], '.php');?>">
 <head>
     <meta charset="UTF-8">
     <title>Zero Daedalus</title>
@@ -10,7 +10,7 @@
     <?php } ?>
     <script>
     if (document.querySelector && window.addEventListener) {
-        document.documentElement.className += 'js';
+        document.documentElement.className += ' js';
     }
     </script>
 </head>

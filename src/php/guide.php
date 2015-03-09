@@ -24,6 +24,15 @@
             </ul>
         </section>
 
+        <h2>Descriptions</h2>
+        <section class="section">
+            <dl>
+                <dt>Title</dt>
+                <dd>Definition</dd>
+
+            </dl>
+        </section>
+
         <h2>Fonts</h2>
         <section class="section">
             <h3>Display Font</h3>
@@ -189,18 +198,6 @@
     <section id="molecules">
         <h1>Molecules</h1>
 
-        <h2>Navigation</h2>
-        <section style="height: 24px;" class="section">
-                <nav class="nav" role="navigation">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </nav>
-        </section>
-
         <h2>Copyright</h2>
         <section class="section">
             <small>
@@ -223,11 +220,62 @@
                 <a href="" class="btn">Submit</a>
             </p>
         </section>
+
+        <h2>Project Body</h2>
+        <section class="section project">
+            <dl>
+                <dt>Brief</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta sint recusandae sit quae ullam harum rem dolore, neque, natus possimus delectus qui consequatur. Harum quos fugit illo quasi magnam.</dd>
+
+                <dt>Description</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab hic praesentium nihil iusto provident expedita debitis maiores ipsum! Ducimus ratione amet sunt adipisci labore tenetur facilis quam officia, deleniti ad.</dd>
+            </dl>
+        </section>
+
+        <h2>Project Header</h2>
+        <section class="section project" style="height: 100px;">
+            <h2>Really Long Project Title</h2>
+            <ul>
+                <li><a class="btn" href="">Website</a></li>
+                <li><a class="btn" href="">Repo</a></li>
+                <li><a class="btn" href="">Case Study</a></li>
+            </ul>
+        </section>
+
+        <h2>Navigation</h2>
+        <section style="height: 24px;" class="section">
+                <nav class="nav" role="navigation">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+        </section>
     </section>
 
     <!-- Organisms -->
     <section id="organisms">
         <h1>Organisms</h1>
+
+        <h2>Contact Form</h2>
+        <form action="" class="section">
+            <p>
+                <input type="text" placeholder="Name">
+            </p>
+            <p>
+                <input type="email" placeholder="Email Address">
+            </p>
+            <p>
+                <input type="url" placeholder="Website (Optional)">
+            </p>
+
+            <p>
+                <a href="" class="btn danger">Reset</a>
+                <a href="" class="btn success">Submit</a>
+            </p>
+        </form>
 
         <h2>Header</h2>
         <section class="section">
@@ -270,23 +318,25 @@
             </section>
         </section>
 
-        <h2>Contact Form</h2>
-        <form action="" class="section">
-            <p>
-                <input type="text" placeholder="Name">
-            </p>
-            <p>
-                <input type="email" placeholder="Email Address">
-            </p>
-            <p>
-                <input type="url" placeholder="Website (Optional)">
-            </p>
+        <h2>Project</h2>
+        <section class="section">
+            <article class="project">
+                <header>
+                    <h2>Project Title</h2>
+                        <a class="btn" href="">Website</a>
+                        <a class="btn" href="">Repo</a>
+                        <a class="btn" href="">Case Study</a>
+                </header>
+                <dl>
+                    <dt>Brief</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta sint recusandae sit quae ullam harum rem dolore, neque, natus possimus delectus qui consequatur. Harum quos fugit illo quasi magnam.</dd>
 
-            <p>
-                <a href="" class="btn danger">Reset</a>
-                <a href="" class="btn success">Submit</a>
-            </p>
-        </form>
+                    <dt>Description</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab hic praesentium nihil iusto provident expedita debitis maiores ipsum! Ducimus ratione amet sunt adipisci labore tenetur facilis quam officia, deleniti ad.</dd>
+                </dl>
+            </article>
+        </section>
+
     </section>
 
 

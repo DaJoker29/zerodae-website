@@ -1,6 +1,7 @@
 <html class="<?php echo basename($_SERVER['PHP_SELF'], '.php');?>">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zero Daedalus</title>
     <link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Stint+Ultra+Expanded|Alice' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo BASE;?>/style.css">

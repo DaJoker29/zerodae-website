@@ -31,7 +31,6 @@
                 <h2>Theta</h2>
                     <a class="btn" href="">Website</a>
                     <a class="btn" href="">Repo</a>
-                    <a class="btn" href="">Case Study</a>
             </header>
             <dl>
                 <dt>Brief</dt>

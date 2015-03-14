@@ -13,12 +13,10 @@
 }
 
 %overlays {
-    color: $color-secondary;
-    background-color: $color-secondary-dark;
+    color: $color-primary;
+    background-color: transparentize($color-secondary-dark, .2);
     left: 0;
     position: absolute;
-    opacity: 0;
     text-align: center;
-    transition: $transition;
     width: 100%;
 }

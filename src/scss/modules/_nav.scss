@@ -25,11 +25,13 @@
 }
 
 .nav a:hover {
-    background-color: transparentize($color-text, .6);
+    @include media($bp-1) {
+        background-color: transparentize($color-text, .6);
+    }
 }
 
 .index .about-link,
 .work .work-link,
 .contact .contact-link {
-    background-color: transparentize($black, .6);
+    color: $color-primary;
 }

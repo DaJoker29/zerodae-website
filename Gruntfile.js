@@ -55,7 +55,17 @@ module.exports = function(grunt) {
         },
         jshint: {
             options: {
-                jshintrc: true
+                    'bitwise': true,
+                    'camelcase': true,
+                    'curly': true,
+                    'eqeqeq': true,
+                    'eqnull': true,
+                    'expr': true,
+                    'immed': true,
+                    'newcap': true,
+                    'noarg': true,
+                    'quotmark': true,
+                    'browser': true
             },
             all: ['src/js/**/*.js']
         },
@@ -84,6 +94,12 @@ module.exports = function(grunt) {
             php: {
                 cwd: 'src/php',
                 src: ['**/*.php'],
+                dest: 'public',
+                expand: true
+            },
+            pics: {
+                cwd: 'img',
+                src: ['**/*.jpg'],
                 dest: 'public',
                 expand: true
             }

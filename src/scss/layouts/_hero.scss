@@ -3,11 +3,12 @@
     @include media($bp-1) {
         display: flex;
     }
+    background-attachment: fixed;
     background-color: transparentize($color-primary-dark, .9);
-    background-image: url(http://placehold.it/1280x720);
+    background-image: url('tools.jpg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    background-position:  center center;
+    background-size: cover;
     border-bottom-width: 1px;
     display: none;
     min-height: $height-hero;

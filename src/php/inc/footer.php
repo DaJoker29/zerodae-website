@@ -1,6 +1,6 @@
 <footer class="navbar__bottom">
-    <?php include('nav.php'); ?>   
-    <small class="copyright">Copyright &copy; 2015 <a href="<?php 
+<!--     <?php include('nav.php'); ?>   
+ -->    <small class="copyright">Copyright &copy; 2015 <a href="<?php 
     if('localhost' == $_SERVER['HTTP_HOST']) {
         echo BASE . '/guide';
     } else {

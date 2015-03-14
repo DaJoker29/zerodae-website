@@ -1,33 +1,18 @@
 .section {
     @include section;
-    @include media($bp-0) {
-        &:nth-child(even) {
-            > h2 {
-                text-align: right;
-            }
-        }
-    }
     @include media($bp-2) {
-        &:nth-child(even) {
-            float: left;
-        }
-
-        &:nth-child(odd) {
-            float: right;
-        }
-        margin: $gutter-md;
-        width: 80%;
+        margin: $gutter 0;
     }
 }
 
 .panel {
-    @include section($color-primary);
-    @include text-shadow;
+    @include section($color-secondary);
+    @include text-shadow(0, 3px, 0);
     color: $color-primary;
     display: block;
     font-family: $font-display;
-    font-size: $h2;
+    font-size: $h1;
     margin: auto;
     text-align: center;
-    width: 35%;
+    width: 60%;
 }

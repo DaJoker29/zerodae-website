@@ -1,30 +1,24 @@
-zDae
-========
-
-Free and open website design for Zero Daedalus. Open to improvements and suggestions from any open source community.
+# Zero Daedalus Website
+##### Free and Open website design for zerodaedalus.com
 
 Build Instructions
 -------------------
 
-First, install dependencies:
+First, use [Node/NPM](https://nodejs.org/) to install dependencies
 
-`npm install`
+```
+npm install
+```
 
-Next, compile `public` folder:
+Next, use [Grunt](http://gruntjs.com/) to build project
 
-`grunt prod` for production build
+```
+grunt prod
+```
+**-- or --**
+```
+grunt dev
+```
+> Production is compressed and uglified. Development is uncompressed with sourcemaps.
 
--- OR -- 
-
-`grunt dev` for development build
-
-
-Build Commands
-----------------
-
-* `grunt` : compile development build and launch watch server
-* `grunt watch` : launch watch server
-* `grunt dev` : compile development build
-* `grunt prod` : compile production build
-
-Default `grunt` command will perform development build then run `grunt watch` to jump straight into coding.
+> *Default `grunt` command will build development version and launch `grunt watch` to jump straight into coding*

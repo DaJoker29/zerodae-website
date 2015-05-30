@@ -1,103 +1,90 @@
 html {
     -ms-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    font-size: $base-size;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: $color-bg;
-    color: $color-text;
-    font-family: $font-sans;
-    font-size: $body;
-    letter-spacing: 1px;
-    line-height: $line-height;
     margin: 0;
+    font: 16px/1;
+    > section {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 h1,
 h2,
 h3,
 h4,
+h5,
 p,
+ul,
+ol,
 blockquote,
 figure,
-ol,
-ul {
+button {
     margin: 0;
     padding: 0;
-    clear: both;
 }
 
+main,
 li {
     display: block;
-    list-style-type: none;
 }
 
 h1,
 h2,
 h3,
-h4 {
-    font-family: $font-display;
-    font-weight: normal;
+h4,
+h5,
+p {
+    font-size: inherit;
 }
 
-@each $header, $size in (h1: $h1, h2: $h2, h3: $h3, small: $small) {
-    #{$header} {
-        font-size: $size;
-    }
+strong {
+    font-weight: bold;
+}
+
+sup {
+    position: relative;
+    top: -.5em;
+    font-size: 65%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+a,
+button {
+    color: inherit;
 }
 
 a {
-    &:hover {
-        color: $color-text;
-    }
     text-decoration: none;
-    color: $color-secondary;
-    transition: $transition;
-    cursor: pointer;
 }
 
-p {
-    margin: $gutter 0;
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    -webkit-font-smoothing: inherit;
+    &:focus {
+        outline: 0;
+    }
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
 }
 
 img {
-    border: 0;
-    height: auto;
     max-width: 100%;
-}
-
-input,
-textarea,
-select {
-    @include border($c: $color-text);
-    background-color: $black;
-    color: $color-text;
-    display: block;
-    font-family: $font-sans;
-    font-size: inherit;
-    padding: $gutter-sm;
-    outline: 0;
-    resize: none;
-    width: 100%;
-}
-
-input {
-    border-width: 0 0 1px 0;
-    background-color: transparent;
-}
-
-abbr {
-    color: $color-primary;
-    cursor: help;
-}
-
-dt {
-    font-family: $font-display;
-}
-
-dd {
-    font-size: $base-size;
+    height: auto;
+    border: 0;
 }

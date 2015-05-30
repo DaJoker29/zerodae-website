@@ -1,30 +1,7 @@
-// Utility
-@import "util/vars";
-@import "util/mixins";
-@import "util/placeholders";
-
 // Base
+@import "base/vars";
+@import "base/mixins";
+@import "base/placeholders";
 @import "base/global";
 
-// Layouts
-@import "layouts/content";
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/hero";
-
-// Modules
-@import "modules/btn";
-@import "modules/nav";
-@import "modules/navbar";
-@import "modules/title";
-@import "modules/sections";
-@import "modules/portrait";
-@import "modules/project";
-
-// State
-@import "state/fields";
-@import "state/btn";
-
-// Theme
-
-// Page
+// Partials

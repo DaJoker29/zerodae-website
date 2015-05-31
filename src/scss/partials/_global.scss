@@ -8,11 +8,8 @@ html {
 
 body {
     margin: 0;
-    font: 16px/1;
-    > section {
-        height: 100%;
-        width: 100%;
-    }
+    font: 16px/1 $open;
+    color: #fff;
 }
 
 h1,
@@ -38,8 +35,6 @@ li {
 h1,
 h2,
 h3,
-h4,
-h5,
 p {
     font-size: inherit;
 }
@@ -87,4 +82,29 @@ img {
     max-width: 100%;
     height: auto;
     border: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $exo;
+    padding-bottom: $gutter;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+section {
+    min-height: 100%;
+    width: 100%;
+    padding: $gutter * 3 0;
 }

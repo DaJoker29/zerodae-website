@@ -1,0 +1,4 @@
+// Text Shadow 
+@mixin text-shadow($h: $gutter / 20, $v: $gutter / 20, $blur: $gutter / 20, $color: $black) {
+  text-shadow: $h $v $blur $color 
+}

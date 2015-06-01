@@ -7,55 +7,76 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
 </head>
-<body style="background-color: ivory;">
-    <nav class="navigation"></nav>
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a data-scroll href="#">Home</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#portfolio">Portfolio</a></li>
+            <li><a data-scroll href="#services">Services</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="intro" class="intro">
-        <div class="container">
-            <img class="logo" src="logo.svg" alt="Logo">
-            <h1 class="title">Zero Daedalus</h1>
-            <p class="tagline">Connect. Develop. Evolve.</p>
+    <div class="wrapper">
+        <div class="inner">
+
+            <header>
+                <a class="menu"><img src="icons/menu.svg" alt=""></a>
+            </header>
+
+            <section id="intro" class="intro">
+                <img class="logo" src="logo.svg" alt="Logo">
+                <h1 class="title">Zero Daedalus</h1>
+                <p class="tagline">Connect. Develop. Evolve.</p>
+            </section>
+
+            <section id="about" class="about">
+                <h2>Very Good Websites</h2>
+                <p>We build the type of websites Ron Swanson would build, if he built websites. We're based out of the Central Valley in California and we're pretty awesome. Simple and effective best describe our work. Bringing old-fashioned craftsmanship into the digital era is our goal.</p>
+            </section>
+
+            <section id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
+                <article class="project">
+                    <a href="//staging.zerodaedalus.com/ifb"><img src="//placehold.it/200x200" alt="Interfaith Food Bank Website"></a>
+                    <h3>Interfaith Food Bank</h3>
+                    <p>Website - Design</p>
+                </article>
+
+                <article class="project">
+                    <a href="//staging.zerodaedalus.com/scramble"><img src="//placehold.it/200x200" alt="Scramble web application"></a>
+                    <h3>Scramble</h3>
+                    <p>Web App - Programming</p>
+                </article>
+            </section>
+
+            <section id="services" class="services">
+                <h2>Services</h2>
+                <p>
+                    We make stuff.
+                </p>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Reach us through...</h2>
+                <p>
+                    <a href="mailto:captain@zerodaedalus.net">Email</a>
+                    <a href="//www.facebook.com/zerodae">Facebook</a>
+                    <a href="//twitter.com/ZeroDaedalus">Twitter</a>
+                </p>
+            </section>
+
+            <footer></footer>
         </div>
-    </section>
+    </div>
 
-    <section id="about" class="about">
-        <h2>Very Good Websites</h2>
-        <p>We build the type of websites Ron Swanson would build, if he built websites. We're based out of the Central Valley in California and we're pretty awesome. Simple and effective best describe our work. Bringing old-fashioned craftsmanship into the digital era is our goal.</p>
-    </section>
 
-    <section id="work" class="work">
-        <h2>Portfolio</h2>
-        <article class="project">
-            <a href="//staging.zerodaedalus.com/ifb"><img src="//placehold.it/200x200" alt="Interfaith Food Bank Website"></a>
-            <h3>Interfaith Food Bank</h3>
-            <p>Website - Design</p>
-        </article>
-
-        <article class="project">
-            <a href="//staging.zerodaedalus.com/scramble"><img src="//placehold.it/200x200" alt="Scramble web application"></a>
-            <h3>Scramble</h3>
-            <p>Web App - Programming</p>
-        </article>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Services</h2>
-        <p>
-            We make stuff.
-        </p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Reach us through...</h2>
-        <p>
-            <a href="mailto:captain@zerodaedalus.net">Email</a>
-            <a href="//www.facebook.com/zerodae">Facebook</a>
-            <a href="//twitter.com/ZeroDaedalus">Twitter</a>
-        </p>
-    </section>
-
-    <footer></footer>
     
+    <script src="scroll.js"></script>
     <script src="script.js"></script>
+    <script>
+        smoothScroll.init();
+    </script>
 </body>
 </html>

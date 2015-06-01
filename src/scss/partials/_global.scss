@@ -9,7 +9,8 @@ html {
 body {
     margin: 0;
     font: 16px/1 $open;
-    color: #fff;
+    color: $white;
+    line-height: 1.4;
 }
 
 h1,
@@ -53,7 +54,7 @@ sup {
 
 a,
 button {
-    color: inherit;
+    color: $red;
 }
 
 a {

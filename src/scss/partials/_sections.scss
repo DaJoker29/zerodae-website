@@ -1,4 +1,6 @@
-
+.inner {
+    text-align: center;
+}
 
 .services {
     background: $gold;
@@ -12,7 +14,7 @@
     background: $green;
 }
 
-.work {
+.portfolio {
     background: $black;
 }
 
@@ -24,11 +26,9 @@
     width: 6em;
 }
 
-.container {
-    text-align: center;
-}
-
-.title {
+.title,
+.tagline {
+    @include text-shadow;
 }
 
 .tagline {

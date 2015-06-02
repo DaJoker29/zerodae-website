@@ -1,0 +1,18 @@
+.project {
+    border-radius: 10%;
+    padding: $gutter;
+    margin: $gutter;
+}
+
+.project img {
+    width: 10em;
+    margin: 0 auto;
+}
+
+.ifb {
+    background-color: $red;
+}
+
+.scramble {
+    background-color: $green;
+}

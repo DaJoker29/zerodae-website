@@ -54,11 +54,12 @@ sup {
 
 a,
 button {
-    color: $red;
+    color: inherit;
 }
 
 a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 button {
@@ -90,6 +91,7 @@ h2,
 h3 {
     font-family: $exo;
     padding-bottom: $gutter;
+    line-height: $line-height-h;
 }
 
 h1 {
@@ -104,9 +106,8 @@ h3 {
     font-size: $h3;
 }
 
-section {
-    display: box-border;
-    min-height: 100%;
-    width: 100%;
-    padding: $gutter * 3 0;
+footer {
+    padding: $gutter;
+    position: absolute;
+    bottom: 0;
 }

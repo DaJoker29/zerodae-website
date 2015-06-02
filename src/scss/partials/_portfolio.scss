@@ -2,6 +2,7 @@
     border-radius: 10%;
     padding: $gutter;
     margin: $gutter;
+    flex: 1 12em;
 }
 
 .project img {
@@ -10,9 +11,16 @@
 }
 
 .ifb {
-    background-color: $red;
+    background-color: $blue;
 }
 
 .scramble {
-    background-color: $green;
+    background-color: $gold;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
 }

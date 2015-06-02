@@ -8,10 +8,34 @@ nav {
 }
 
 .menu {
-  position: fixed;
-  right: $gutter;
-  top: $gutter;
-  cursor: pointer;
+    position: fixed;
+    right: $gutter;
+    top: $gutter;
+    cursor: pointer;
+    
+    @include bp-one {
+        display: none;
+    }
+}
+
+.menu-lg {
+    background: transparent;
+    border-radius: 50% 0 0 50%;
+    position: fixed;
+    opacity: 0.5;
+    right: 0;
+    top: 10%;
+    display: none;
+    transition: $trans;
+    
+    &:hover {
+        background: $red;
+        opacity: 0.8;
+    }
+
+    @include bp-one {
+        display: block;
+    }
 }
 
 .nav {

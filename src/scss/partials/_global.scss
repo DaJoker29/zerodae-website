@@ -7,10 +7,14 @@ html {
 }
 
 body {
-    margin: 0;
     font: 16px/1 $open;
+    margin: 0;
     color: $white;
     line-height: $line-height;
+    
+    @include bp-one {
+        font-size: 24px;
+    }
 }
 
 h1,
@@ -110,4 +114,8 @@ footer {
     padding: $gutter;
     position: absolute;
     bottom: 0;
+}
+
+a > img {
+    padding: $gutter;
 }

@@ -11,3 +11,10 @@
         box-shadow: $h $v $blur $color;
     }
 }
+
+// Breakpoints
+@mixin bp-one {
+    @media only screen and (min-width: $one) {
+        @content;
+    }
+}

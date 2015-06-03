@@ -1,0 +1,32 @@
+section {
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: $gutter * 3 0;
+}
+
+.services {
+    background: $gold;
+}
+
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/blurry-circles.png');
+}
+
+.about {
+    background: $green;
+}
+
+.portfolio {
+    background: $black;
+}
+
+.contact {
+    background: $blue;
+}

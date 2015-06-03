@@ -1,9 +1,0 @@
-.navbar__top {
-    @extend %navbar;
-    @include navbar(bottom);
-}
-
-.navbar__bottom {
-    @extend %navbar;
-    @include navbar(top);
-}

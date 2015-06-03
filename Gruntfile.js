@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         watch: {
             sass: {
@@ -7,15 +9,15 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['src/js/**/*.js'],
-                tasks: [ 'jshint', 'uglify:dev']
+                tasks: ['jshint', 'uglify:dev']
             },
-            php: {
-                files: ['src/php/**/*.php'],
+            templates: {
+                files: ['src/templates/**/*.*'],
                 tasks: ['copy']
             },
             livereload: {
                 options: { livereload: true },
-                files: ['public/**/*']
+                files: ['dist/**/*']
             }
         },
         sass: {
@@ -23,7 +25,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'public',
+                dest: 'dist',
                 ext: '.css',
                 options: {
                     style: 'expanded'
@@ -33,7 +35,7 @@ module.exports = function(grunt) {
                expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'public',
+                dest: 'dist',
                 ext: '.css',
                 options: {
                     style: 'compressed',
@@ -43,31 +45,31 @@ module.exports = function(grunt) {
         },
         autoprefixer: {
             dev: {
-                src: 'public/style.css',
+                src: 'dist/style.css',
                 map: true
             },
             prod: {
-                src: 'public/style.css'
+                src: 'dist/style.css'
             }
         },
         clean: {
-            all: ['public/']
+            all: ['dist/']
         },
         jshint: {
             options: {
-                    'bitwise': true,
-                    'camelcase': true,
-                    'curly': true,
-                    'eqeqeq': true,
-                    'eqnull': true,
-                    'expr': true,
-                    'immed': true,
-                    'newcap': true,
-                    'noarg': true,
-                    'quotmark': true,
-                    'browser': true
+                'bitwise': true,
+                'camelcase': true,
+                'curly': true,
+                'eqeqeq': true,
+                'eqnull': true,
+                'expr': true,
+                'immed': true,
+                'newcap': true,
+                'noarg': true,
+                'quotmark': true,
+                'browser': true
             },
-            all: ['src/js/**/*.js']
+            src: ['src/js/**/*.js']
         },
         uglify: {
             dev: {
@@ -79,43 +81,26 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'public/script.js': ['src/js/**/*.js', '!src/js/guide/*.js'],
-                    'public/guide.js': ['src/js/guide/*.js']
+                    'dist/script.js': ['src/js/**/*.js']
                 }
             },
             prod: {
                 files: {
-                    'public/script.js': ['src/js/**/*.js', '!src/js/guide/*.js'],
-                    'public/guide.js': ['src/js/guide/*.js']
+                    'dist/script.js': ['src/js/**/*.js']
                 }
             }
         },
         copy: {
-            php: {
-                cwd: 'src/php',
-                src: ['**/*.php'],
-                dest: 'public',
-                expand: true
-            },
-            pics: {
-                cwd: 'img',
-                src: ['**/*.jpg'],
-                dest: 'public',
+            templates: {
+                cwd: 'src/templates',
+                src: ['**/*.*', '!**/_*.*'],
+                dest: 'dist',
                 expand: true
             }
         }
-
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-
-    grunt.registerTask('dev', ['clean', 'copy', 'jshint', 'uglify:dev', 'sass:dev', 'autoprefixer:dev']);
-    grunt.registerTask('prod', ['clean', 'copy', 'jshint', 'uglify:prod', 'sass:prod', 'autoprefixer:prod']);
-    grunt.registerTask('default', ['dev', 'watch']);
+    grunt.registerTask('dev', 'Build development version of project', ['clean', 'copy', 'jshint', 'uglify:dev', 'sass:dev', 'autoprefixer:dev']);
+    grunt.registerTask('prod', 'Build production version of project', ['clean', 'copy', 'jshint', 'uglify:prod', 'sass:prod', 'autoprefixer:prod']);
+    grunt.registerTask('default', 'Build development version and run watch server', ['dev', 'watch']);
 };

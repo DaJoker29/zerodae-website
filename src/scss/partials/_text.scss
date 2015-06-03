@@ -1,0 +1,9 @@
+.tagline {
+    font-size: $h3;
+}
+
+.container > h2,
+.title {
+    border-bottom: 2px solid;
+    margin-bottom: $gutter;
+}

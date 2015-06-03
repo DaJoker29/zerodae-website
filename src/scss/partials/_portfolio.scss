@@ -1,0 +1,26 @@
+.project {
+    border-radius: 10%;
+    padding: $gutter;
+    margin: $gutter;
+    flex: 1 12em;
+}
+
+.project img {
+    width: 10em;
+    margin: 0 auto;
+}
+
+.ifb {
+    background-color: $blue;
+}
+
+.scramble {
+    background-color: $gold;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+}

@@ -1,30 +1,5 @@
 {
-  "name": "zDae-website",
-  "version": "0.1.1",
-  "description": "Zero Daedalus website. Designed, built and maintained by Zero Daedalus",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DaJoker29/zerodae-website.git"
-  },
-  "keywords": [
-    "git",
-    "npm",
-    "nodejs",
-    "grunt",
-    "livereload",
-    "sass",
-    "javascript"
-  ],
-  "author": "Dewitt A. Buckingham, III <captain@zerodaedalus.net> (http://zerodaedalus.com/)",
   "license": "GPLv2",
-  "bugs": {
-    "url": "https://github.com/DaJoker29/zerodae-website/issues"
-  },
-  "homepage": "https://github.com/DaJoker29/zerodae-website",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.2.0",
@@ -33,6 +8,23 @@
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "^0.7.0",
-    "grunt-contrib-watch": "^0.6.1"
-  }
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "3.2.0"
+  },
+  "name": "zerodae-website",
+  "description": "Free and Open website design for zerodaedalus.com",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaJoker29/zerodae-website.git"
+  },
+  "author": "Dewitt A. Buckingham, III <captain@zerodaedalus.net> (http://zerodaedalus.com/)",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/zerodae-website/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/zerodae-website"
 }

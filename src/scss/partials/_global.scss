@@ -119,3 +119,7 @@ footer {
 a > img {
     padding: $gutter;
 }
+
+:focus {
+    outline: none !important;
+}

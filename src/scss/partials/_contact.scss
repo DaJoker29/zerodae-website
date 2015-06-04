@@ -1,0 +1,31 @@
+.contact-form > input,
+.contact-form > textarea,
+.contact-form > button {
+    background: $blue;
+    display: block;  
+    font-size: $body;
+    padding: $gutter;
+    border: 1px solid $blue;
+    transition: $trans;
+    
+    &:focus,
+    &:hover {
+        background: $white;
+    }
+}
+
+button[type="submit"] {
+    background: $green;
+    color: $black;
+}
+
+.contact-form > input,
+.contact-form > button {
+    flex: 1 100%;
+}
+
+.contact-form > textarea {
+    resize: none;
+    flex: 2;
+    transition: $trans;
+}

@@ -94,7 +94,7 @@ h1,
 h2,
 h3 {
     font-family: $exo;
-    padding-bottom: $gutter;
+    margin: $gutter 0;
     line-height: $line-height-h;
 }
 
@@ -118,4 +118,8 @@ footer {
 
 a > img {
     padding: $gutter;
+}
+
+:focus {
+    outline: none !important;
 }

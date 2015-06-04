@@ -1,0 +1,22 @@
+.service {
+    margin: $gutter;
+    padding-bottom: $gutter;
+    border-radius: 40%;
+    flex: 1 12em;
+    
+    > h3 {
+        margin: 0;
+    }
+
+    > p {
+        font-style: italic;
+    }
+    
+    > img {
+        height: 5em;
+    }
+
+    > ul {
+        margin: $gutter;
+    }
+}

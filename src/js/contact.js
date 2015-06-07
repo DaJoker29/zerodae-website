@@ -24,7 +24,7 @@
             'message': str, 
         };
 
-        xmlhttp.open('POST', 'http://localhost:3000', true);
+        xmlhttp.open('POST', 'http://zerodaedalus.com/mailer/', true);
         xmlhttp.setRequestHeader('Content-Type', 'application/json');
         xmlhttp.send(JSON.stringify(obj));        
     });

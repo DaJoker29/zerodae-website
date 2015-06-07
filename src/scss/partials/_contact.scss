@@ -2,6 +2,7 @@
 .contact-form > textarea,
 .contact-form > button {
     background: $blue;
+    color: $green;
     display: block;  
     font-size: $body;
     padding: $gutter;
@@ -10,13 +11,20 @@
     
     &:focus,
     &:hover {
-        background: $white;
+        background: $black;
     }
 }
 
 button[type="submit"] {
     background: $green;
     color: $black;
+    
+    &:hover,
+    &:focus {
+        @include box-shadow;
+        background: $green;
+        color: $white;
+    }
 }
 
 .contact-form > input,

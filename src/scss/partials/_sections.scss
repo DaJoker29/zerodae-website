@@ -11,22 +11,25 @@ section {
     padding: $gutter * 3 0;
 }
 
-.services {
-    background: $gold;
-}
-
 .intro {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/blurry-circles.png');
 }
 
 .about {
     background: $green;
+    color: $black;
 }
 
 .portfolio {
     background: $black;
 }
 
+.services {
+    background: $gold;
+    color: $red;
+}
+
 .contact {
     background: $blue;
+    color: $green;
 }

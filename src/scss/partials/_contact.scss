@@ -6,7 +6,7 @@
     font-size: $body;
     padding: $gutter;
     border: 1px solid $blue;
-    transition: $trans;
+    transition: $fast;
     
     &:focus,
     &:hover {
@@ -27,5 +27,5 @@ button[type="submit"] {
 .contact-form > textarea {
     resize: none;
     flex: 2;
-    transition: $trans;
+    transition: $fast;
 }

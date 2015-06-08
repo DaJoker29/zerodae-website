@@ -37,3 +37,7 @@ button[type="submit"] {
     flex: 2;
     transition: $fast;
 }
+
+.message-sent {
+    display: none;
+}

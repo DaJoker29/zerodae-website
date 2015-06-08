@@ -6,13 +6,9 @@ section {
 
 .container {
     text-align: center;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding: $gutter * 3 0;
-}
-
-.services {
-    background: $gold;
 }
 
 .intro {
@@ -21,12 +17,19 @@ section {
 
 .about {
     background: $green;
+    color: $black;
 }
 
 .portfolio {
     background: $black;
 }
 
+.services {
+    background: $gold;
+    color: $red;
+}
+
 .contact {
     background: $blue;
+    color: $green;
 }

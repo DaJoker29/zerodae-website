@@ -4,7 +4,7 @@ nav {
     width: $menu-offset;
     height: 100%;
     background: $red;
-    transition: left $trans;
+    transition: left $fast;
 }
 
 .menu {
@@ -19,18 +19,14 @@ nav {
 }
 
 .menu-lg {
-    background: transparent;
-    border-radius: 25% 0 0 25%;
     position: fixed;
-    opacity: 0.5;
     right: 0;
-    top: 10%;
+    bottom: $gutter;
     display: none;
-    transition: $trans;
     
-    &:hover {
+    li:hover {
+        transition: $fast;
         background: $red;
-        opacity: 0.8;
     }
 
     @include bp-one {
@@ -60,7 +56,7 @@ nav {
 .inner {
     float: right;
     width: 100%;
-    transition: $trans;
+    transition: $fast;
 }
 
 nav.open {

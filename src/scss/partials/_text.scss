@@ -8,3 +8,18 @@
     margin-bottom: $gutter;
     padding-bottom: $gutter;
 }
+
+.title {
+    @include text-shadow;
+    font-size: $h2;
+}
+
+.daedalus {
+    font-family: $dae;
+    font-weight: 100;
+}
+
+.zero {
+    font-weight: 900;
+    font-family: $zero;
+}

@@ -2,21 +2,29 @@
 .contact-form > textarea,
 .contact-form > button {
     background: $blue;
+    color: $green;
     display: block;  
     font-size: $body;
     padding: $gutter;
     border: 1px solid $blue;
-    transition: $trans;
+    transition: $fast;
     
     &:focus,
     &:hover {
-        background: $white;
+        background: $black;
     }
 }
 
 button[type="submit"] {
     background: $green;
     color: $black;
+    
+    &:hover,
+    &:focus {
+        @include box-shadow;
+        background: $green;
+        color: $white;
+    }
 }
 
 .contact-form > input,
@@ -27,5 +35,9 @@ button[type="submit"] {
 .contact-form > textarea {
     resize: none;
     flex: 2;
-    transition: $trans;
+    transition: $fast;
+}
+
+.message-sent {
+    display: none;
 }

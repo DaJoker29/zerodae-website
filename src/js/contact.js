@@ -1,11 +1,17 @@
 (function() {
 
     var form = document.querySelector('.contact-form');
+    var sent = document.querySelector('.message-sent');
     var name = document.querySelector('.name');
     var email = document.querySelector('.email');
     var subject = document.querySelector('.subject');
     var message = document.querySelector('.message');
     var xmlhttp, obj, str;
+
+    function reset() {
+        form.reset();
+        sent.style.display = 'block';
+    }
 
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
@@ -26,7 +32,10 @@
 
         xmlhttp.open('POST', 'http://zerodaedalus.com/mailer/', true);
         xmlhttp.setRequestHeader('Content-Type', 'application/json');
-        xmlhttp.send(JSON.stringify(obj));        
+        xmlhttp.send(JSON.stringify(obj));
+
+        // Reset form
+        reset();
     });
 
 })();

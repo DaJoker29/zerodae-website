@@ -21,6 +21,7 @@
 
     form.addEventListener('submit', function( e ) {
         e.preventDefault();
+
         str = '\nName: ' + name.value + '\nEmail: ' + email.value + '\nMessage: ' + message.value;
 
         obj = {

@@ -145,11 +145,11 @@
             <section id="contact" class="contact">
                 <div class="container">
                     <h2>Get in touch...</h2>
-                    <form class="contact-form flex" action="">
-                        <input class="name" type="text" placeholder="Name"> 
-                        <input class="email" type="text" placeholder="Email">
+                    <form class="contact-form flex" action="" autocomplete>
+                        <input class="name" type="text" placeholder="Name" required autocomplete="name"> 
+                        <input class="email" type="email" placeholder="Email" required autocomplete="email">
                         <input class="subject" type="text" placeholder="Subject">
-                        <textarea class="message" type="text" placeholder="Message" rows="3"></textarea>
+                        <textarea class="message" type="text" placeholder="Message" rows="3" required></textarea>
                         <button type="submit">Send</button>
                     </form>
                     <p class="message-sent">Your message has been sent. We will respond to you shortly.</p>

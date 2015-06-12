@@ -6,6 +6,15 @@
     <link href='http://fonts.googleapis.com/css?family=Exo+2|Open+Sans|Rock+Salt|Coda' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
     <link rel="icon" href="assets/logo.png?v=<?php echo filemtime('logo.png'); ?>">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48886757-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
     

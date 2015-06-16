@@ -100,6 +100,14 @@
                                 <p>Web App - Programming</p>
                             </a>
                         </article>
+
+                        <article class="project jkrealty">
+                            <a href="//jk-realtors.com">
+                                <img src="assets/jk.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
+                                <h3>JK Realtors</h3>
+                                <p>Website - Design</p>
+                            </a>
+                        </article>
                     </div>
                 </div>
             </section>

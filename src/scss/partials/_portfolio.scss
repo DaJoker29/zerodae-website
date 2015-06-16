@@ -3,6 +3,7 @@
     padding: $gutter;
     margin: $gutter;
     flex: 1 12em;
+    color: $black;
 }
 
 .project img {
@@ -16,6 +17,10 @@
 
 .scramble {
     background-color: $red;
+}
+
+.jkrealty {
+    background-color: $green;
 }
 
 .flex {

@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,, initial-scale=1" />
-    <title>zDae | Connect. Develop. Evolve.</title>
+    <meta name="description" content="We build stunning websites and applications! Web design, graphic design and development services based out of the Central Valley and Bay Area. Contact us now!">
+    <title>Zero Daedalus Web Design and Development | Connect. Develop. Evolve.</title>
     <link href='http://fonts.googleapis.com/css?family=Exo+2|Open+Sans|Rock+Salt|Coda' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
     <link rel="icon" href="assets/logo.png?v=<?php echo filemtime('logo.png'); ?>">
@@ -60,10 +61,10 @@
                     <p class="tagline">Connect. Develop. Evolve.</p>
 
                     <div class="social">
-                        <a class="phone" href="tel:+12097409063"><img src="assets/phone.svg?v=<?php echo filemtime('assets/phone.svg'); ?>" alt=""></a>
-                        <a href="//www.facebook.com/zerodae"><img src="assets/facebook.svg?v=<?php echo filemtime('assets/facebook.svg'); ?>" alt=""></a>
-                        <a href="//twitter.com/ZeroDaedalus"><img src="assets/twitter.svg?v=<?php echo filemtime('assets/twitter.svg'); ?>" alt=""></a>
-                        <a href="//github.com/DaJoker29"><img src="assets/github.svg?v=<?php echo filemtime('assets/github.svg'); ?>" alt=""></a>
+                        <a class="phone" href="tel:+12097409063"><img src="assets/phone.svg?v=<?php echo filemtime('assets/phone.svg'); ?>" alt="Telephone"></a>
+                        <a href="//www.facebook.com/zerodae"><img src="assets/facebook.svg?v=<?php echo filemtime('assets/facebook.svg'); ?>" alt="Facebook"></a>
+                        <a href="//twitter.com/ZeroDaedalus"><img src="assets/twitter.svg?v=<?php echo filemtime('assets/twitter.svg'); ?>" alt="Twitter"></a>
+                        <a href="//github.com/DaJoker29"><img src="assets/github.svg?v=<?php echo filemtime('assets/github.svg'); ?>" alt="Github"></a>
                         <a href="mailto:captain@zerodaedalus.net"><img src="assets/envelop.svg?v=<?php echo filemtime('assets/envelop.svg'); ?>" alt="Email"></a>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
             <section id="about" class="about">
                 <div class="container">
                     <h2>Very Good Websites</h2>
-                    <p>We build the type of websites Ron Swanson would build, if he built websites. We're based out of the San Francisco Bay Area and we're pretty awesome. Simple and effective best describe our work. Bringing old-fashioned craftsmanship into the digital era is our goal.</p>
+                    <p>We design and build the type of websites Ron Swanson would make, if he were a web designer. We're based out of the Bay Area and Central Valley and we're pretty awesome. Our work is simple and effective, bringing old-fashioned craftsmanship into the digital era is our goal.</p>
                     <img class="hero"src="assets/hipster.svg?v=<?php echo filemtime('assets/hipster.svg'); ?>" alt="">
                 </div>
             </section>
@@ -94,7 +95,7 @@
 
                         <article class="project scramble">
                             <a href="//staging.zerodaedalus.com/scramble">
-                                <img src="assets/s-hex.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web">
+                                <img src="assets/s-hex.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
                                 <h3>Scramble</h3>
                                 <p>Web App - Programming</p>
                             </a>
@@ -154,6 +155,7 @@
             <section id="contact" class="contact">
                 <div class="container">
                     <h2>Get in touch...</h2>
+                    <p>Call us at <strong>209.740.9063</strong> or fill out the form below</p>
                     <form class="contact-form flex" action="" autocomplete>
                         <input class="name" type="text" placeholder="Name" required autocomplete="name"> 
                         <input class="email" type="email" placeholder="Email" required autocomplete="email">

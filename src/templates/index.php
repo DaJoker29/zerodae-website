@@ -18,7 +18,6 @@
     </script>
 </head>
 <body>
-    
     <!-- Offcanvas Nav -->
     <nav>
         <ul class="nav">
@@ -28,7 +27,6 @@
             <li><a data-scroll href="#services">Services</a></li>
             <li><a data-scroll href="#contact">Contact</a></li>
         </ul>
-
         <!-- Footer -->
         <footer>
             Crafted and Maintained by <a href="//zerodaedalus.com">ZeroDae</a>
@@ -85,6 +83,13 @@
                     
                     <h2>Portfolio</h2>
                     <div class="flex">
+                        <article class="project jkrealty">
+                            <a href="//jk-realtors.com">
+                                <img src="assets/jk.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
+                                <h3>JK Realty</h3>
+                                <p>Website - Design</p>
+                            </a>
+                        </article>
                         <article class="project ifb">
                             <a href="//staging.zerodaedalus.com/ifb">
                                 <img src="assets/ifb-hex.svg?v=<?php echo filemtime('assets/ifb-hex.svg'); ?>" alt="Interfaith Food Bank Website">
@@ -98,14 +103,6 @@
                                 <img src="assets/s-hex.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
                                 <h3>Scramble</h3>
                                 <p>Web App - Programming</p>
-                            </a>
-                        </article>
-
-                        <article class="project jkrealty">
-                            <a href="//jk-realtors.com">
-                                <img src="assets/jk.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
-                                <h3>JK Realtors</h3>
-                                <p>Website - Design</p>
                             </a>
                         </article>
                     </div>

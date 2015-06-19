@@ -13,7 +13,7 @@
   },
   "name": "zerodae-website",
   "description": "Free and Open website design for zerodaedalus.com",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

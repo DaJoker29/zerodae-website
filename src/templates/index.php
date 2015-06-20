@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,, initial-scale=1" />
-    <meta name="description" content="We build stunning websites and applications! Web design, graphic design and development services based out of the Central Valley and Bay Area. Contact us now!">
-    <title>Zero Daedalus Web Design and Development | Connect. Develop. Evolve.</title>
+    <meta name="description" content="Stunning websites and apps! Web design, web programming, graphics and other services offered. Contact us now!">
+    <title>Web Design and Development | Zero Daedalus</title>
     <link href='http://fonts.googleapis.com/css?family=Exo+2|Open+Sans|Rock+Salt|Coda' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
     <link rel="icon" href="assets/logo.png?v=<?php echo filemtime('logo.png'); ?>">
@@ -29,24 +29,23 @@
         </ul>
         <!-- Footer -->
         <footer>
-            Crafted and Maintained by <a href="//zerodaedalus.com">ZeroDae</a>
+            Crafted by <a href="//zerodaedalus.com">Zero Daedalus</a>
         </footer>
     </nav>
-
     <!-- Main Wrapper -->
     <div class="wrapper">
         <div class="inner">
 
             <!-- Menu Icon -->
             <header>
-                <a class="menu"><img src="assets/menu.svg?v=<?php echo filemtime('assets/menu.svg'); ?>" alt=""></a>
+                <a class="menu"><img src="assets/menu.svg?v=<?php echo filemtime('assets/menu.svg'); ?>" alt="Navigation Menu"></a>
                 <div class="menu-lg">
                     <ul>
-                        <li><a data-scroll href="#"><img src="assets/home3.svg?v=<?php echo filemtime('assets/home3.svg'); ?>" alt=""></a></li>
-                        <li><a data-scroll href="#about"><img src="assets/info.svg?v=<?php echo filemtime('assets/info.svg'); ?>" alt=""></a></li>
-                        <li><a data-scroll href="#portfolio"><img src="assets/briefcase.svg?v=<?php echo filemtime('assets/briefcase.svg'); ?>" alt=""></a></li>
-                        <li><a data-scroll href="#services"><img src="assets/cogs.svg?v=<?php echo filemtime('assets/cogs.svg'); ?>" alt=""></a></li>
-                        <li><a data-scroll href="#contact"><img src="assets/bubble.svg?v=<?php echo filemtime('assets/bubble.svg'); ?>" alt=""></a></li>
+                        <li><a data-scroll href="#"><img src="assets/home3.svg?v=<?php echo filemtime('assets/home3.svg'); ?>" alt="Home"></a></li>
+                        <li><a data-scroll href="#about"><img src="assets/info.svg?v=<?php echo filemtime('assets/info.svg'); ?>" alt="Information"></a></li>
+                        <li><a data-scroll href="#portfolio"><img src="assets/briefcase.svg?v=<?php echo filemtime('assets/briefcase.svg'); ?>" alt="Portfolio"></a></li>
+                        <li><a data-scroll href="#services"><img src="assets/cogs.svg?v=<?php echo filemtime('assets/cogs.svg'); ?>" alt="Services"></a></li>
+                        <li><a data-scroll href="#contact"><img src="assets/bubble.svg?v=<?php echo filemtime('assets/bubble.svg'); ?>" alt="Contact"></a></li>
                     </ul>
                 </div>
             </header>
@@ -72,8 +71,8 @@
             <section id="about" class="about">
                 <div class="container">
                     <h2>Very Good Websites</h2>
-                    <p>We design and build the type of websites Ron Swanson would make, if he were a web designer. We're based out of the Bay Area and Central Valley and we're pretty awesome. Our work is simple and effective, bringing old-fashioned craftsmanship into the digital era is our goal.</p>
-                    <img class="hero"src="assets/hipster.svg?v=<?php echo filemtime('assets/hipster.svg'); ?>" alt="">
+                    <p>We design and build the type of websites Ron Swanson would make, if he were a web designer. We're based out of the Bay Area and Central Valley and we're pretty awesome. Our work is simple and effective, bringing old-fashioned craftsmanship into the digital era.</p>
+                    <img class="hero"src="assets/hipster.svg?v=<?php echo filemtime('assets/hipster.svg'); ?>" alt="Mustachioed Man">
                 </div>
             </section>
 
@@ -85,7 +84,7 @@
                     <div class="flex">
                         <article class="project jkrealty">
                             <a href="//jk-realtors.com">
-                                <img src="assets/jk.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Scramble web app">
+                                <img src="assets/jk.svg?v=<?php echo filemtime('assets/s-hex.svg'); ?>" alt="Jk Realty Website">
                                 <h3>JK Realty</h3>
                                 <p>Website - Design</p>
                             </a>
@@ -114,19 +113,17 @@
                     <h2>Services</h2>
                     <div class="flex">
                         <article class="service">
-                            <img src="assets/embed2.svg?v=<?php echo filemtime('assets/embed2.svg'); ?>" alt="">
-                            <h3>Programming</h3>
+                            <img src="assets/droplet.svg?v=<?php echo filemtime('assets/droplet.svg'); ?>" alt="">
+                            <h3>Design</h3>
                             <p>
-                                Clean coding across multiple web stacks.
+                                Elegant design to bring your ideas to life.
                             </p>
                             <ul>
-                                <li>Web Apps & Services</li>
-                                <li>JavaScript & PHP</li>
-                                <li>Node.js & Express</li>
-                                <li>MySQL & MongoDB</li>
+                                <li>HTML5 & CSS3</li>
+                                <li>Custom Graphics</li>
+                                <li>Vector Logos</li>
                             </ul>
                         </article>
-
                         <article class="service">
                             <img src="assets/keyboard.svg?v=<?php echo filemtime('assets/keyboard.svg'); ?>" alt="">
                             <h3>Development</h3>
@@ -140,17 +137,17 @@
                                 <li>eCommerce</li>
                             </ul>
                         </article>
-
                         <article class="service">
-                            <img src="assets/droplet.svg?v=<?php echo filemtime('assets/droplet.svg'); ?>" alt="">
-                            <h3>Design</h3>
+                            <img src="assets/embed2.svg?v=<?php echo filemtime('assets/embed2.svg'); ?>" alt="">
+                            <h3>Programming</h3>
                             <p>
-                                Elegant design to bring your ideas to life.
+                                Clean coding across multiple web stacks.
                             </p>
                             <ul>
-                                <li>HTML5 & CSS3</li>
-                                <li>Custom Graphics</li>
-                                <li>Vector Logos</li>
+                                <li>Web Apps & Services</li>
+                                <li>JavaScript & PHP</li>
+                                <li>Node.js & Express</li>
+                                <li>MySQL & MongoDB</li>
                             </ul>
                         </article>
                     </div>
@@ -173,7 +170,6 @@
             </section>
         </div>
     </div>
-
     <!-- Scripts -->
     <script src="vendor/scroll.js?v=<?php echo filemtime('vendor/scroll.js'); ?>"></script>
     <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>

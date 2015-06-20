@@ -4,12 +4,6 @@
     <meta name="viewport" content="width=device-width,, initial-scale=1" />
     <meta name="description" content="Stunning websites and apps! Web design, web programming, graphics and other services offered. Contact us now!">
     <title>Web Design and Development | Zero Daedalus</title>
-    <style>
-        .intro {
-          background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/blurry-circles.png");
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/blurry-circles.png");
-        }
-    </style>
     <link href='http://fonts.googleapis.com/css?family=Exo+2|Open+Sans|Rock+Salt|Coda' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
     <link rel="icon" href="assets/logo.png?v=<?php echo filemtime('logo.png'); ?>">

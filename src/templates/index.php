@@ -58,9 +58,10 @@
                     <p class="tagline">Connect. Develop. Evolve.</p>
 
                     <div class="social">
-                        <a class="phone" href="tel:+12097409063"><img src="assets/phone.svg?v=<?php echo filemtime('assets/phone.svg'); ?>" alt="Telephone"></a>
-                        <a href="//www.facebook.com/zerodae"><img src="assets/facebook.svg?v=<?php echo filemtime('assets/facebook.svg'); ?>" alt="Facebook"></a>
+                        <a href="tel:+12097409063" class="phone"><img src="assets/phone.svg?v=<?php echo filemtime('assets/phone.svg'); ?>" alt="Telephone"></a>
+                        <a href="//plus.google.com/+Zerodaedalus"><img src="assets/google-plus.svg?v=<?php echo filemtime('assets/google-plus.svg'); ?>" alt="Google Plus"></a>
                         <a href="//twitter.com/ZeroDaedalus"><img src="assets/twitter.svg?v=<?php echo filemtime('assets/twitter.svg'); ?>" alt="Twitter"></a>
+                        <a href="//www.facebook.com/zerodae"><img src="assets/facebook.svg?v=<?php echo filemtime('assets/facebook.svg'); ?>" alt="Facebook"></a>
                         <a href="//github.com/DaJoker29"><img src="assets/github.svg?v=<?php echo filemtime('assets/github.svg'); ?>" alt="Github"></a>
                         <a href="mailto:captain@zerodaedalus.net"><img src="assets/envelop.svg?v=<?php echo filemtime('assets/envelop.svg'); ?>" alt="Email"></a>
                     </div>

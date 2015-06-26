@@ -37,6 +37,8 @@
 
         // Reset form
         reset();
+
+        window.location.hash = 'sent';
     });
 
 })();

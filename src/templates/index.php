@@ -14,7 +14,9 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-48886757-1', 'auto');
-        ga('send', 'pageview');
+        ga('send', 'pageview', {
+            'page': location.pathname + location.search  + location.hash
+        });
     </script>
 </head>
 <body>
@@ -166,7 +168,7 @@
                         <textarea class="message" type="text" placeholder="Message" rows="3" required></textarea>
                         <button type="submit">Send</button>
                     </form>
-                    <p class="message-sent">Your message has been sent. We will respond to you shortly.</p>
+                    <p id="sent" class="message-sent">Your message has been sent. We will respond to you shortly.</p>
                 </div>
             </section>
         </div>

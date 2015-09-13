@@ -1,4 +1,10 @@
-@import "variables";
+// Modules
+@import "modules/variables";
 
-@import "bootstrap-imports";
-@import "bootstrap-overrides";
+// Bootstrap
+@import "vendor/bootstrap-imports";
+
+// Partials
+@import "partials/content";
+@import "partials/sidebar";
+@import "partials/bootstrap-overrides";

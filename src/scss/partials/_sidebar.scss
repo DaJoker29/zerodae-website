@@ -1,0 +1,9 @@
+.sidebar {
+    position: fixed;
+    top: $navbar-height + 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $sidebar-bg-color;
+    border-right: $sidebar-border-color;
+    overflow-x: hidden;
+}

@@ -1,22 +1,17 @@
 {
-  "license": "GPLv2",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^2.2.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "3.2.0"
-  },
+  "license": "MIT",
   "name": "zerodae-website",
   "description": "Free and Open website design for zerodaedalus.com",
   "version": "1.1.13",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "yarn eslint .",
+    "fix": "yarn eslint --fix . || true",
+    "preversion": "git checkout master && git merge --no-ff develop -m 'Pull changes for release bump'",
+    "postversion": "git push && git push --tags && git checkout develop && git merge --no-ff master -m 'Sync Develop branch' && git push",
+    "dev": "gulp dev",
+    "prod": "gulp prod",
+    "todo": "leasot -Sx {app,client,config,helpers,test,tools}/**/*.{js,html,css}"
   },
   "repository": {
     "type": "git",
@@ -26,5 +21,28 @@
   "bugs": {
     "url": "https://github.com/DaJoker29/zerodae-website/issues"
   },
-  "homepage": "https://github.com/DaJoker29/zerodae-website"
+  "homepage": "https://github.com/DaJoker29/zerodae-website",
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0"
+  },
+  "dependencies": {
+    "autoprefixer": "8.2.0",
+    "babel-eslint": "8.2.2",
+    "eslint-config-last": "0.0.5",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import-order-autofix": "0.8.3",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.4.0",
+    "gulp-postcss": "7.0.1",
+    "gulp-pug": "3.3.0",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.4",
+    "prettier": "1.11.1"
+  }
 }

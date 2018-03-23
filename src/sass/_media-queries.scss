@@ -7,10 +7,6 @@
     max-width: none;
   }
 
-  .main-header {
-    border-bottom: none;
-  }
-
   .work-cell {
     display: inline-block;
     width: 50%;
@@ -19,6 +15,28 @@
 
 @media (min-width: 668px) {
   html {
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  body {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .contact-form fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    div {
+      flex: 1 1 40%;
+      margin: 0 .5rem;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
 }

@@ -1,0 +1,53 @@
+@media (min-width: 480px) {
+  html {
+    font-size: 20px;
+  }
+
+  .main-logo {
+    max-width: none;
+  }
+
+  .work-cell {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 668px) {
+  html {
+    font-size: 24px;
+  }
+
+  body {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .contact-form fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    div {
+      flex: 1 1 40%;
+      margin: 0 .5rem;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  } 
+  .bio-img {
+    float: right;
+    width: 40%;
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bio-img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,22 @@
+.main-logo {
+  max-height: 100%;
+  max-width: 60px;
+}
+
+.main-header {
+  height: 80px;
+  border-bottom: 1px solid var(--trans-black);
+}
+
+.main-nav {
+  float: right;
+  max-height: 100%;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin: .4em;
+      text-transform: uppercase;
+    }
+  }
+}

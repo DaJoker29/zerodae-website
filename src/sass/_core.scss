@@ -1,0 +1,23 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --trans-black: rgba(0, 0, 0, .4);
+  --futura: "futura-pt", sans-serif;
+  --futura-bold: "futura-pt-bold", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  margin: .8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--futura);
+  font-weight: 500;
+}

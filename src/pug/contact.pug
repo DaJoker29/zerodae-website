@@ -1,0 +1,30 @@
+extend _base
+
+block content
+  h2 Contact Us
+
+  form(action="").contact-form
+    fieldset
+      div
+        label(for="firstName") First Name*
+        input(type="text")
+      div
+        label(for="lastName") Last Name*
+        input(type="text")
+      div
+        label(for="phoneNumber") Phone Number*
+        input(type="tel")
+      div
+        label(for="emailAddress") Email Address*
+        input(type="email")
+      div
+        label(for="projectDeadline") Project Deadline
+        input(type="date")
+      div
+        label(for="budget") Budget
+        input(type="text")
+      div
+        label(for="projectDescription") What is your project?*
+        textarea(cols="30", rows="10")
+
+    button Send

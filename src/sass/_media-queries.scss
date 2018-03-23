@@ -10,6 +10,11 @@
   .main-header {
     border-bottom: none;
   }
+
+  .work-cell {
+    display: inline-block;
+    width: 50%;
+  }
 }
 
 @media (min-width: 668px) {

@@ -1,0 +1,46 @@
+.work {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.work .cta {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.work .lead {
+  text-align: center;
+  max-width: 100%;
+}
+
+.work-cell {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  a {
+    h3 {
+      position: absolute;
+      top: 45%;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: 1s;
+      z-index: 9999;
+      color: var(--white);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      transition: 1s;
+    }
+    &:hover {
+      h3 {
+        opacity: 1;
+      }
+      img {
+        filter: brightness(0.3);
+      }
+    }
+  }
+}

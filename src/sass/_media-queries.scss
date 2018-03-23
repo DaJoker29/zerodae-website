@@ -38,5 +38,16 @@
   body {
     margin-right: 10rem;
     margin-left: 10rem;
+  } 
+  .bio-img {
+    float: right;
+    width: 40%;
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bio-img {
+    width: 60%;
   }
 }

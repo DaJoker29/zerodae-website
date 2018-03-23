@@ -19,15 +19,18 @@
   font-size: 2rem;
   font-family: var(--futura);
   font-weight: 500;
-  max-width: 66%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .cta {
   font-weight: 700;
   border-bottom: .2em solid;
-  margin: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px var(--trans-black);
+  line-height: 1.5;
   &:hover {
     color: var(--black);
   }

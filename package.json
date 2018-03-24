@@ -10,7 +10,7 @@
     "preversion": "git checkout master && git merge --no-ff develop -m 'Pull changes for release bump'",
     "postversion": "git push && git push --tags && git checkout develop && git merge --no-ff master -m 'Sync Develop branch' && git push",
     "dev": "gulp dev",
-    "prod": "gulp prod",
+    "prod": "gulp build",
     "todo": "leasot -Sx {app,client,config,helpers,test,tools}/**/*.{js,html,css}"
   },
   "repository": {

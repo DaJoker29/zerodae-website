@@ -5,7 +5,6 @@ gulp.task('css', () => {
   const postcss = require('gulp-postcss');
   const sass = require('gulp-sass');
   const autoprefixer = require('autoprefixer');
-  const normalize = require('postcss-normalize');
 
   return gulp
     .src('src/sass/style.scss')
@@ -41,5 +40,5 @@ gulp.task('watch', () => {
   gulp.watch('src/pug/**/*.pug', ['html']);
 });
 
-gulp.task('dev', ['html', 'css', 'watch']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('build', ['html', 'css']);
+gulp.task('dev', ['build', 'watch']);

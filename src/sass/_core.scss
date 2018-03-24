@@ -24,6 +24,13 @@ p {
 
 body {
   margin: .8rem;
+  background: fixed no-repeat bottom right/cover url("https://www.zerodaedalus.com/wp-content/uploads/2018/03/Hex-Background@075x.png");
+}
+
+@media (min-resolution: 192dpi) {
+  body {
+    background-image: url("https://www.zerodaedalus.com/wp-content/uploads/2018/03/Hex-Background.png")
+  }
 }
 
 a {
